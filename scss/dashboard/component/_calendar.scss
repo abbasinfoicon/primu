@@ -1,0 +1,143 @@
+// calendar start
+.calendar {
+  padding: 40px 25px;
+  position: relative;
+
+  &-wrapper {
+    position: relative;
+
+    button {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      position: absolute;
+      top: 0;
+
+      &.btn-prev {
+        left: 0;
+      }
+      &.btn-next {
+        right: 0;
+      }
+    }
+  }
+
+  #divCal {
+    table {
+      width: 100%;
+
+      td {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #262d33;
+        padding: 19.5px 10px;
+      }
+
+      thead {
+        tr {
+          td {
+            text-align: center;
+            padding-bottom: 40px;
+            padding-top: 5px;
+            font-size: 16px;
+            color: $black;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          &.days {
+            td {
+              color: #6e7781;
+            }
+          }
+          td {
+            text-align: center;
+
+            &.today {
+              font-weight: bold;
+              background: #DADADA;
+              color: $black;
+              @include border-radius(100%);
+            }
+
+            &.not-current {
+              color: #6e7781;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-reminder {
+    @include border-radius(12px);
+    background-color: $white;
+    width: 232px;
+    margin-bottom: 80px;
+    overflow: hidden;
+
+    @include mq(max, 1350px) {
+      width: 100%;
+    }
+
+    .img-style {
+      margin-bottom: 0;
+
+      &.disable {
+        position: relative;
+
+        &:before {
+          content: '';
+          @include overlay;
+          background: transparentize($white, 0.23);
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .content-style {
+      padding: 20px 15px 10px;
+
+      h4 {
+        font-size: 16px;
+        color: $text_color;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 16px;
+        color: $text_color;
+        margin-bottom: 10px;
+
+        span {
+          font-size: 14px;
+          color: #92929d;
+        }
+      }
+
+      h3 {
+        font-size: 16px;
+        color: $main;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  // calendar-reminder
+  .calendar-reminder{  
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+  }
+}
+// calendar end

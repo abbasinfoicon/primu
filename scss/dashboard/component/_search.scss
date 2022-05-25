@@ -1,0 +1,116 @@
+@import "range-input";
+
+// search start
+.search {
+    background-color: $white;
+    padding: 17.2px;
+    @include border-radius(12px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    input {
+        @include border-radius(12px);
+        height: 43.46px;
+        background-color: $second;
+        border: none;
+        padding: 6px 14px;
+        font-size: 15px;
+    }
+
+    &_001 {
+        position: relative;
+
+        input {
+            min-width: 366px;
+        }
+
+        button {
+            position: absolute;
+            right: 0;
+            border: none;
+            background-color: $main;
+            color: $white;
+            @include border-radius(12px);
+            height: 100%;
+            width: 55px;
+            font-size: 22px;
+            border: 1px solid $main;
+
+            &:hover {
+                background-color: $white;
+                color: $main;
+                border-color: $second;
+            }
+        }
+    }
+
+    &_002 {
+        position: relative;
+
+        span {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+            font-size: 18px;
+            color: $black;
+            line-height: 1;
+        }
+
+        input {
+            min-width: 297px;
+            padding-left: 50px;
+        }
+    }
+
+    &_range {
+        padding: 3px 8px;
+        background-color: $second;
+        @include border-radius(12px);
+        height: 23px;
+        position: relative;
+        width: 263px;
+
+        span.span-chf {
+            position: absolute;
+            top: -20px;
+            font-size: 12px;
+
+            &.min-chf {
+                left: 0;
+            }
+            &.max-chf {
+                right: 0;
+            }
+        }
+
+        input {
+            height: 5px;
+        }
+    }
+
+    &_button {
+        position: relative;
+
+        &-btn {
+            font-size: 12px;
+            font-weight: 600;
+            color: $main;
+            height: 43.46px;
+            background-color: $second;
+            border: 1px solid $second;
+            padding: 6px 33.7px;
+            text-transform: uppercase;
+            @include border-radius(12px);
+
+            &:hover {
+                background-color: $main;
+                color: $white;
+                border-color: $main;
+            }
+        }
+    }
+}
+// search end

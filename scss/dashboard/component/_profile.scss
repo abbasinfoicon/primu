@@ -1,0 +1,69 @@
+// personalien start
+.personalien {
+    padding: 30px;
+
+    .form {
+        &-floating {
+            textarea {
+                height: 130px;
+            }
+
+            input,
+            textarea {
+                padding-left: 70px;
+                padding-bottom: 0px !important;
+            }
+        }
+    }
+}
+
+.edit-profile {
+    margin-bottom: 30px;
+    text-align: right;
+
+    a {
+        position: relative;
+        text-decoration: underline;
+        display: inline-block;
+        color: $main;
+    }
+}
+
+.form {
+    &-floating {
+        margin-bottom: 5px;
+
+        input {
+            font-size: 18px;
+            color: $text_color;
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid #e9e9f0;
+
+            &:focus,
+            &:active {
+                background-color: transparent;
+            }
+        }
+
+        textarea {
+            height: 130px;
+            font-size: 18px;
+            color: $text_color;
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid #e9e9f0;
+
+            &:focus,
+            &:active {
+                background-color: transparent;
+            }
+        }
+
+        label {
+            padding-left: 0;
+        }
+    }
+}
+
+// personalien end

@@ -1,0 +1,78 @@
+// aside start
+.aside {
+    position: fixed;
+    width: 323px;
+    background-color: $main;
+    height: 100vh;
+    float: left;
+
+    // name-sec
+    .name-sec {
+        height: 124px;
+        position: relative;
+
+        a {
+            @include img-center(both);
+            font-size: 36px;
+            color: $white;
+            width: 100%;
+            padding-left: 38px;
+
+            img {
+            }
+        }
+    }
+
+    // menu-sec
+    .menu-sec {
+        ul {
+            li {
+                a {
+                    font-size: 18px;
+                    color: $white;
+                    padding: 10px 10px 10px 38px;
+                    display: block;
+                    position: relative;
+                    border-left: 10px solid $main;
+                    display: flex;
+                    align-items: center;
+
+                    &:hover {
+                        background: rgba(255, 255, 255, 0.29);
+                        border-color: #c6ddff;
+                    }
+
+                    img {
+                        position: relative;
+                        margin-right: 30px;
+                    }
+                }
+
+                &.active {
+                    a {
+                        background: rgba(255, 255, 255, 0.29);
+                        border-color: #c6ddff;
+                    }
+                }
+            }
+        }
+    }
+
+    // logo-sec
+    .logo-sec {
+        position: absolute;
+        bottom: 9%;
+        width: 100%;
+        padding-left: 50px;
+        background-color: $main;
+
+        a {
+            display: block;
+
+            img {
+                width: auto;
+            }
+        }
+    }
+}
+// aside end

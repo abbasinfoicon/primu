@@ -1,0 +1,230 @@
+// profileModal
+#profileModal {
+    .modal {
+        &-dialog {
+            margin: 0;
+            max-width: 63vw;
+            margin-left: auto;
+        }
+
+        &-content {
+            @include border-radius(0);
+            border-top-left-radius: 35px;
+            border-bottom-left-radius: 35px;
+        }
+
+        &-body {
+            padding: 0;
+
+            &::-webkit-scrollbar {
+                display: none;
+                width: 4px;
+            }
+
+            &:hover {
+                &::-webkit-scrollbar {
+                    display: block;
+                }
+            }
+
+            &-content {
+                .left {
+                    &-st {
+                        padding: 25px;
+
+                        &-img {
+                            margin-bottom: 50px;
+
+                            img {
+                                @include border-radius(35px);
+                            }
+                        }
+
+                        &-content {
+                            h3 {
+                                font-size: 45px;
+                                @include poppins(regular400);
+                                color: $main;
+
+                                img {
+                                    margin-bottom: 21px;
+                                }
+                            }
+
+                            h4 {
+                                font-size: 20px;
+                                color: $main;
+                                @include poppins(semibold600);
+                            }
+
+                            p {
+                                font-size: 20px;
+                                color: transparentize($text_color, 0.39);
+                                margin-bottom: 30px;
+                                @include poppins(semibold600);
+                            }
+                        }
+                    }
+                }
+
+                .right {
+                    &-st {
+                        @include box-shadow(-20px 20px 80px rgba(0, 0, 0, 0.16));
+                        background-color: $second;
+                        padding: 25px 58px 25px 25px;
+
+                        .close-img {
+                            cursor: pointer;
+                            display: flex;
+                            margin-left: auto;
+                        }
+
+                        h2 {
+                            font-size: 60px;
+                            color: $main;
+                            @include Bebas(regular400);
+                        }
+
+                        p {
+                            font-size: 18px;
+                            color: $black;
+
+                            display: -webkit-box;
+                            -webkit-line-clamp: 10;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+
+                            small {
+                                font-size: 16px;
+                                color: $text_color;
+                            }
+                        }
+
+                        hr {
+                        }
+
+                        h3 {
+                            font-size: 35px;
+                            color: $main;
+                            @include Bebas(regular400);
+                        }
+
+                        p {
+                        }
+
+                        .calendar {
+                        }
+
+                        &-calendar {
+                            position: relative;
+
+                            a {
+                                font-size: 15px;
+                                color: transparentize($black, 0.6);
+                                display: block;
+                                text-align: center;
+                                text-decoration: underline;
+
+                                &.data {
+                                }
+                            }
+
+                            .inter-data {
+                                position: relative;
+                                background-color: #eaf0f2;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-top: 10px;
+                                margin-bottom: 18px;
+
+                                input {
+                                    width: 57px;
+                                    height: 57px;
+                                    @include border-radius(17px);
+                                    background-color: $white;
+                                    color: $main;
+                                    @include poppins(semibold600);
+                                    border: none;
+                                    margin: 8px;
+                                    padding: 12px;
+                                    text-align: center;
+
+                                    &:first-child {
+                                        margin-right: 4px;
+                                    }
+
+                                    &:nth-child(2) {
+                                        margin-left: 4px;
+                                        margin-right: 12.5px;
+                                    }
+
+                                    &:nth-child(3) {
+                                        margin-left: 12.5px;
+                                        margin-right: 4px;
+                                    }
+
+                                    &:last-child {
+                                        margin-left: 4px;
+                                    }
+                                }
+                            }
+
+                            // form-floating
+                            .form-floating {
+                                position: relative;
+
+                                label {
+                                    color: #959494;
+                                    padding-left: 0;
+                                }
+
+                                input {
+                                    font-size: 18px;
+                                    color: $text_color;
+                                    border: none;
+                                    border-bottom: 2px solid $text_color;
+                                    padding-left: 50px;
+                                    padding-top: 30px;
+                                    padding-bottom: 0px;
+                                    background-color: $second;
+                                }
+
+                                textarea {
+                                    font-size: 18px;
+                                    color: $text_color;
+                                    border: none;
+                                    border-bottom: 1px solid $text_color;
+                                    height: 130px;
+                                    padding-left: 0;
+                                    padding-left: 50px;
+                                    padding-top: 30px;
+                                    padding-bottom: 0px;
+                                    background-color: $second;
+                                }
+                            }
+
+                            .cstm-btn {
+                                font-size: 17px;
+                                color: $white;
+                                text-transform: uppercase;
+                                display: inline-block;
+                                @include border-radius(25px);
+                                background: $main;
+                                border: 1px solid $main;
+                                padding: 6px 18.15px 1px;
+                                text-decoration: none;
+                                text-align: center;
+
+                                &:hover {
+                                    background-color: $white;
+                                    color: $main;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

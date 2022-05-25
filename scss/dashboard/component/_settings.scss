@@ -1,0 +1,42 @@
+@import "custom-radio";
+@import "add-profile";
+
+.settings {
+    padding: 30px;
+
+    &-ul {
+        min-height: 528px;
+        overflow: hidden;
+        overflow-y: auto;
+
+        li {
+            a {
+                font-size: 16px;
+                @include roboto(regular400);
+                color: #31394d;
+                display: block;
+                padding: 15px;
+                margin-bottom: 20px;
+                background-color: $white;
+                @include border-radius(5px);
+
+                &:hover,
+                &.active {
+                    background-color: transparentize(#00a8ce, 0.73);
+                    color: #2d5b66;
+                }
+            }
+        }
+    }
+
+    .btn-speichern {
+        font-size: 14px;
+        @include roboto(regular400);
+        color: #748aa1;
+        background: #000;
+        background-color: #f9fafe;
+        display: block;
+        text-align: center;
+        padding: 19.5px;
+    }
+}

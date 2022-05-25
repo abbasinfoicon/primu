@@ -1,0 +1,29 @@
+// graph-img start
+.graph {
+    position: relative;
+
+    &-img {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &-content {
+        @include position(absolute, $top: 30px, $left: 22px);
+
+        p {
+            font-size: 16px;
+            color: $black;
+            @include inter(medium500);
+
+            span {
+                font-size: 14px;
+                color: #b8bcbf;
+                @include inter(regular400);
+            }
+        }
+    }
+}
+// graph-img end

@@ -1,0 +1,72 @@
+@import "./component/calendar";
+@import "./component/graph";
+@import "./component/lessons";
+@import "./component/rectransaction";
+@import "./component/search";
+@import "./component/userlist";
+@import "./component/message";
+@import "./component/custom-select";
+@import "./component/addNew";
+@import "./component/rectransaction";
+@import "./component/expenditure";
+@import "./component/settings";
+@import "./component/profile";
+
+// main-wrapper start
+.main-wrapper {
+    padding: 40px 30px;
+
+    .custom-md-4 {
+        @include mq(max, 1501px) {
+            width: 50%;
+
+            &:last-child {
+                width: 100%;
+            }
+
+            .custom-flex-sec {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    &.marketplace {
+        padding-left: 166px;
+        padding-right: 166px;
+    }
+}
+
+.listUser,
+.message-chat {
+    height: 648px;
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+        width: 4px;
+    }
+
+    &:hover {
+        &::-webkit-scrollbar {
+            display: block;
+        }
+    }
+}
+
+// marketplace-pg
+.marketplace-pg {
+    width: 84%;
+    margin: 0 auto;
+}
+
+// bg
+.bg {
+    &_white {
+        background-color: $white;
+    }
+}
+
+// main-wrapper end

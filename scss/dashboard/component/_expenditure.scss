@@ -1,0 +1,78 @@
+// expenditure start
+.expenditure {
+    padding: 24px;
+
+    &-growth {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        h3 {
+            font-size: 31px;
+            color: $main;
+            @include poppins(medium500);
+
+            span {
+                display: block;
+                font-size: 17px;
+                color: #35384d;
+            }
+        }
+        p {
+            font-size: 17px;
+            color: #9e9ea8;
+            @include poppins(medium500);
+
+            a {
+                color: $white;
+                @include poppins(regular400);
+                background-color: #f1623f;
+                border-radius: 22px;
+                padding: 2.75px 15px;
+                display: block;
+                width: 81px;
+                text-align: center;
+                margin-left: auto;
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    &-graph {
+        img {
+        }
+    }
+
+    &-send {
+        .check {
+            &__item {
+                background-color: transparentize(#504da6, 0.9);
+
+                label {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    .send-money {
+        font-size: 20px;
+        line-height: 27px;
+        color: $white;
+        background-color: $main;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 13px 15px 11px;
+        text-align: center;
+        @include border-radius(5px);
+        border: 1px solid $main;
+
+        &:hover {
+            background-color: $white;
+            color: $main;
+            border-color: $main;
+        }
+    }
+}
+// expenditure end

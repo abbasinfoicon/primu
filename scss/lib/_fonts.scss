@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+// Hansief
+@font-face {
+  font-family: "Hansief Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Hansief Regular"), url("#{$fontPath}/Hansief.woff") format("woff");
+}
+
+// Futura
+@font-face {
+  font-family: "Futura LT Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura LT Regular"), url("#{$fontPath}/FuturaLT.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura LT Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura LT Bold"), url("#{$fontPath}/FuturaLT-Bold.woff") format("woff");
+}
+
+// Segoe UI
+@font-face {
+  font-family: "Segoe UI Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Regular"), url("#{$fontPath}/Segoe UI.woff") format("woff");
+}
+@font-face {
+  font-family: "Segoe UI Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Bold"), url("#{$fontPath}/Segoe UI Bold.woff") format("woff");
+}

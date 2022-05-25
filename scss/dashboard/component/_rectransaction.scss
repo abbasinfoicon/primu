@@ -1,0 +1,33 @@
+// rectransaction start
+.rectransaction {
+    padding: 40px;
+
+    &-content {
+        h3 {
+            font-size: 22px;
+            color: $black;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th,
+        td {
+            font-size: 12px;
+            padding: 8px;
+        }
+
+        th {
+            font-weight: bold;
+            color: #5b8dd7;
+        }
+
+        td {
+            font-weight: 400;
+            color: $text_color;
+        }
+    }
+}
+// rectransaction end

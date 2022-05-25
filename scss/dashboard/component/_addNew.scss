@@ -1,0 +1,112 @@
+// addNew start
+.addNew {
+    padding: 30px;
+
+    &-cart {
+        @include background-gradient(#679cf6, #4072ee, "vertical");
+        @include border-radius(5px);
+        padding: 30px;
+        margin-bottom: 30px;
+
+        .logo {
+            margin-bottom: 30px;
+
+            img {
+                width: auto;
+            }
+        }
+
+        &-no {
+            margin-bottom: 35px;
+
+            span {
+                font-size: 20px;
+                @include roboto(regular400);
+                color: $white;
+                padding-right: 10px;
+            }
+        }
+
+        &-name {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 62%;
+
+            p {
+                font-size: 14px;
+                @include roboto(regular400);
+                color: $white;
+
+                small {
+                    color: transparentize($white, 0.5);
+                }
+            }
+        }
+    }
+
+    &-info {
+        .form {
+            &-group {
+                margin-bottom: 12px;
+
+                label {
+                    font-size: 12px;
+                    color: #748aa1;
+                    @include roboto(regular400);
+                    margin-bottom: 5px;
+                    padding-left: 15px;
+                }
+
+                input {
+                    @include border-radius(5px);
+                    height: 51px;
+                    background-color: $white;
+                    border: none;
+                    -webkit-appearance: value;
+                    -moz-appearance: value;
+                    appearance: value;
+                    font-size: 16px;
+                    color: #31394d;
+                    @include roboto(regular400);
+                    padding: 15px;
+
+                    &:focus {
+                        // outline: 1px solid $main;
+                    }
+                }
+
+                /* Chrome, Safari, Edge, Opera */
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                /* Firefox */
+                input[type="number"] {
+                    -moz-appearance: textfield;
+                }
+
+                button {
+                    font-size: 14px;
+                    color: #748aa1;
+                    @include roboto(regular400);
+                    text-align: center;
+                    border: none;
+                    background: #F9FAFE;
+                    display: block;
+                    width: 100%;
+                    padding: 15px;
+                    @include border-radius(5px);
+
+                    &:hover {
+                        background: $main;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+// addNew end

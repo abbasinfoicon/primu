@@ -1,0 +1,85 @@
+// header start
+.header {
+    height: 124px;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+    padding: 0 30px;
+    position: relative;
+    z-index: 99;
+
+    &.sticky {
+        position: fixed;
+        width: calc(100vw - 323px);
+        z-index: 99;
+        box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.13);
+        height: 90px;
+        background-color: $white;
+    }
+
+    &_user-dtl {
+        .media {
+            display: flex;
+            align-items: center;
+
+            .media-left {
+                width: 75px;
+                height: 75px;
+                @include border-radius(100%);
+                overflow: hidden;
+                margin-right: 49px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .media-body {
+                h3 {
+                    font-size: 20px;
+                    color: $text_color;
+                }
+
+                p {
+                    font-size: 17px;
+                    color: $text_color;
+                }
+            }
+        }
+    }
+
+    &_notification {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+
+            li {
+                margin: 0 23px;
+
+                a {
+                    position: relative;
+                    display: block;
+
+                    img {
+                    }
+
+                    span {
+                        width: 9px;
+                        height: 9px;
+                        background: #5b8dd7;
+                        border: 1px solid $main;
+                        position: absolute;
+                        border-radius: 100%;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// header end

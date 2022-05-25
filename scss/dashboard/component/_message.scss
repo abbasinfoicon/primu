@@ -1,0 +1,186 @@
+// message start
+.message {
+    position: relative;
+    padding: 24px;
+    border: 1px solid #e0e3ef;
+
+    .media {
+        justify-content: space-between;
+
+        &-left {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            @include border-radius(100%);
+            margin-right: 64px;
+            background-color: $white;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                @include border-radius(100%);
+            }
+
+            span {
+                width: 16px;
+                height: 16px;
+                display: block;
+                @include border-radius(100%);
+                background: #20d234;
+                border: 1px solid $white;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+        &-body {
+            h3 {
+                font-size: 21px;
+                color: $black;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 15px;
+                color: transparentize($black, 0.6);
+                line-height: 1;
+            }
+
+            a {
+                font-size: 15px;
+                color: $main;
+                text-decoration: underline;
+                line-height: 1;
+                display: block;
+            }
+        }
+
+        &-right {
+            ul {
+                li {
+                    display: inline-block;
+
+                    a {
+                        width: 26.44px;
+                        height: 26.44px;
+                        display: block;
+                        @include border-radius(100%);
+                        border: 1px solid $main;
+                        background-color: $main;
+                        color: $white;
+                        margin: 0 15px;
+                        text-align: center;
+                        justify-content: center;
+                        align-items: center;
+                        display: flex;
+
+                        &:hover {
+                            background-color: $white;
+                            color: $main;
+                        }
+
+                        i {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-chat {
+        height: 470px !important;
+        padding-bottom: 50px;
+
+        .left,
+        .right {
+            padding: 3px;
+            display: flex;
+
+            p {
+                font-size: 14px;
+                padding: 18px 15px;
+                @include border-radius(12px);
+                max-width: 85%;
+            }
+
+            span {
+                font-size: 14px;
+                color: transparentize(#202020, 0.7);
+                padding: 18px 8px;
+            }
+        }
+
+        .left {
+            align-items: flex-end;
+
+            p {
+                color: $white;
+                background-color: $main;
+            }
+        }
+
+        .right {
+            flex-direction: row-reverse;
+
+            p {
+                color: transparentize(#202020, 0.3);
+                background-color: $white;
+            }
+        }
+    }
+
+    &-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: $main;
+        padding: 8px;
+        line-height: 1;
+
+        border-radius: 0 0 12px 12px;
+
+        .send-input {
+            height: 34px;
+            @include border-radius(12px);
+            background-color: $second;
+            padding: 12px 12px;
+            font-size: 11px;
+            color: $text_color;
+            border: none;
+            width: 100%;
+            padding-right: 40px;
+
+            &:active,
+            &:focus {
+                border-color: $main;
+                outline-width: 1px;
+                outline-color: $main;
+            }
+        }
+
+        .send-msg {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            color: $main;
+
+            &.open {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.divider {
+    display: block;
+    position: relative;
+    margin: 16px 0 50px;
+    height: 1px;
+    width: 100%;
+    background-color: transparentize(#202020, 0.8);
+}
+// message end

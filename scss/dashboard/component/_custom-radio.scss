@@ -1,0 +1,134 @@
+// transactions start
+.transactions {
+    padding: 30px;
+}
+// transactions end
+
+// check start
+.check {
+    display: flex;
+
+    &__item {
+        padding: 11.5px 15px;
+        margin-bottom: 20px;
+        background-color: $white;
+        @include border-radius(5px);
+        width: 100%;
+
+        label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.default__check[type="checkbox"],
+.default__check[type="radio"] {
+    display: none;
+
+    ~ .custom__check {
+        display: flex;
+        align-items: center;
+        height: 31px;
+        position: relative;
+        @include transition(all 0.4s ease);
+        cursor: pointer;
+        background-color: $second;
+
+        &:after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            @include transition(all 0.4s ease);
+            top: 50%;
+            @include transform(translateY(-50%));
+        }
+    }
+
+    &:not(.switchbox) {
+        ~ .custom__check {
+            justify-content: center;
+            width: 16px;
+
+            &:after {
+                visibility: hidden;
+            }
+        }
+    }
+
+    &.switchbox {
+        + .custom__check {
+            width: 55.63px;
+
+            &:after {
+                left: 5px;
+            }
+        }
+
+        &:not(:checked) {
+            ~ .custom__check {
+                &:after {
+                    background-color: #8492a6;
+                }
+            }
+        }
+
+        &:checked {
+            ~ .custom__check {
+                &:after {
+                    left: 29px;
+                }
+            }
+        }
+    }
+
+    &:disabled {
+        ~ .custom__check {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+    }
+
+    &:checked {
+        ~ .custom__check {
+            background-color: $main;
+
+            &:after {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.default__check[type="checkbox"] {
+    &:not(.switchbox) {
+        ~ .custom__check {
+            border-radius: 0.375rem;
+
+            &:after {
+                height: 7px;
+                width: 3px;
+                margin-top: -1px;
+                border-bottom: 1px solid $white;
+                border-right: 1px solid $white;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+.default__check[type="radio"],
+.default__check[type="checkbox"].switchbox {
+    ~ .custom__check {
+        border-radius: 50rem;
+        &:after {
+            width: 22px;
+            height: 22px;
+            background-color: $white;
+            border-radius: 50rem;
+        }
+    }
+}
+
+// check end

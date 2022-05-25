@@ -1,0 +1,113 @@
+// listUser start
+.listUser {
+    padding: 21px 12px;
+    border: 1px solid #e0e3ef;
+
+    &-chat {
+        padding: 16px 12px;
+        @include border-radius(12px);
+        cursor: pointer;
+        margin-bottom: 6px;
+
+        .media {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            position: relative;
+
+            &-first {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            &-left {
+                width: 40px;
+                height: 40px;
+                overflow: hidden;
+                @include border-radius(100%);
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &-body {
+                margin-left: 10px;
+
+                h3 {
+                    font-size: 15px;
+                    color: $black;
+                    @include inter(regular400);
+                }
+
+                p {
+                    font-size: 14px;
+                    color: lighten($black, 40);
+                    @include inter(regular400);
+                }
+            }
+
+            &-right {
+                text-align: right;
+                p {
+                    font-size: 12px;
+                    color: transparentize(#202020, 0.7);
+                    margin-bottom: 5px;
+                }
+                span {
+                    width: 20px;
+                    height: 20px;
+                    background: $second;
+                    @include border-radius(100%);
+                    display: block;
+                    margin-left: auto;
+                }
+            }
+        }
+
+        &.active {
+            background-color: $main;
+
+            .media {
+                &-body {
+                    h3 {
+                        color: $white;
+                    }
+                    p {
+                        color: transparentize($white, 0.3);
+                    }
+                }
+
+                &-right {
+                    p {
+                        color: $white;
+                    }
+
+                    span {
+                        background: $main;
+                    }
+                }
+            }
+        }
+
+        &.notification {
+            background-color: transparentize(#f1623f, 0.8);
+
+            .media {
+                &-right {
+                    span {
+                        background: #f1623f;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 12px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// listUser end

@@ -1,0 +1,71 @@
+.irs {
+    &--round {
+        height: auto;
+        position: absolute;
+        width: calc(100% - 16px);
+        top: -26px;
+
+        .irs {
+            &-bar {
+                background-color: $main;
+                height: 3px;
+            }
+
+            &-line {
+                background-color: $white;
+                height: 3px;
+            }
+
+            &-handle {
+                background-color: $white;
+                border: 1px solid $main;
+
+                width: 15px;
+                height: 15px;
+                top: 29px;
+
+                &:hover,
+                .state_hover {
+                    background-color: $main;
+                    @include box-shadow(0px 0px 0px 5px rgba(0, 194, 192, 0.2));
+                }
+            }
+
+            &-from,
+            &-to,
+            &-single {
+                background-color: transparent;
+                color: $text_color;
+                bottom: -70px;
+                top: auto;
+                font-size: 12px;
+
+                &:before {
+                    content: "CHF";
+                    border: none;
+                    font-size: 12px;
+                    width: 25px;
+                    height: 10px;
+                    top: 3px;
+                }
+            }
+
+            &-from {
+                &:before {
+                    left: 25px;
+                }
+            }
+
+            &-to {
+                &:before {
+                    left: 30px;
+                }
+            }
+
+            &-min,
+            &-max {
+                display: none;
+            }
+        }
+    }
+}
