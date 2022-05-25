@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard | PRIMU</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="../assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/stylesheets/magnific-popup.css" rel="stylesheet">
+    <link href="../assets/stylesheets/animate.min.css" rel="stylesheet">
+    <link href="../assets/stylesheets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Magnific Popup core CSS file -->
+    <link href="../assets/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/style.min.css" rel="stylesheet">
+
+</head>
+
+<body class="dsb-page">
+    <!-- preloader area start -->
+    <div id="pre-loader">
+        <div class="pre-loader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+
+    <!-- back to top start -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- back to top end -->
+
+
+    <!--=============================================================================================
+---------------------------- ASIDE-SECTION --------------------------------------------
+===================================================================================================-->
+
+    <aside class="aside">
+        <!-- name-sec -->
+        <div class="name-sec">
+            <a href="dashboard.html"><img src="../assets/img/name.png" alt="" class="img-fluid"> COckpit</a>
+        </div><!-- /name-sec -->
+
+        <!-- menu-sec -->
+        <div class="menu-sec">
+            <ul>
+                <li class="active"><a href="dashboard.html"><img src="../assets/img/dashbord.png" alt="" class="img-fluid">
+                        Dashoard</a></li>
+                <li><a href="marketplace.html"><img src="../assets/img/marketplace.png" alt="" class="img-fluid"> Marketplace</a></li>
+                <li><a href="requests.html"><img src="../assets/img/anfragen.png" alt="" class="img-fluid"> Anfragen</a></li>
+                <li><a href="payment.html"><img src="../assets/img/zahun.png" alt="" class="img-fluid"> Zahlungseinstellungen</a>
+                </li>
+                <li><a href="setting.html"><img src="../assets/img/einstell.png" alt="" class="img-fluid"> Einstellungen</a></li>
+            </ul>
+        </div><!-- /menu-sec -->
+
+        <!-- logo-sec -->
+        <div class="logo-sec">
+            <a href="../index.html"><img src="../assets/img/footer-logo.png" alt="" class="img-fluid"></a>
+        </div><!-- /logo-sec -->
+
+    </aside>
+
+
+    <!--=============================================================================================
+---------------------------- BODY-SECTION --------------------------------------------
+===================================================================================================-->
+
+    <section class="body-section">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-9">
+
+                        <!-- header_user-dtl -->
+                        <div class="header_user-dtl">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="profile.html"><img src="../assets/img/user-img.png" alt="user" class="img-fluid"></a>
+                                </div>
+
+                                <div class="media-body">
+                                    <a href="profile.html"><h3>Max Mustermann</h3></a>
+                                    <p>Student</p>
+                                </div>
+                            </div>
+                        </div><!-- /header_user-dtl -->
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <!-- header_notification -->
+                        <div class="header_notification">
+                            <ul>
+                                <li><a href="#"><img src="../assets/img/notification.png" alt=""><span></span></a></li>
+                                <li><a href="../index.html"><img src="../assets/img/logout.png" alt=""></a></li>
+                            </ul>
+                        </div><!-- /header_notification -->
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main-wrapper -->
+        <div class="main-wrapper bg_white dashboard-pg">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 custom-md-4">
+
+                        <!-- title -->
+                        <div class="title">
+                            <h3>Kalendar</h3>
+                            <p>Samstag, 22 Februar 2022</p>
+                        </div><!-- /title -->
+
+                        <!-- calendar -->
+                        <div class="calendar boxShadow">
+                            <div class="calendar-wrapper">
+                                <button id="btnPrev" type="button" class="btn-prev">
+                                    <img src="../assets/img/left-img.png" alt="" class="img-fluid">
+                                </button>
+
+                                <button id="btnNext" type="button" class="btn-next">
+                                    <img src="../assets/img/right-img.png" alt="" class="img-fluid">
+                                </button>
+                                <div id="divCal"></div>
+                            </div>
+
+                            <!-- calendar-reminder -->
+                            <div class="calendar-reminder">
+                                <div class="img-style">
+                                    <a href="#"><img src="../assets/img/student1.png" alt="" class="img-fluid"></a>
+                                </div>
+
+                                <div class="content-style">
+                                    <a href="#"><h4>Sara Mustermann</h4></a>
+                                    <p>Mathematik, Chemie</p>
+
+                                    <a href="#"><h3>CHF 50 - Lektion</h3></a>
+
+                                    <p><span>Bachelor in Pharmazie</span></p>
+                                </div>
+                            </div><!-- /calendar-reminder -->
+                        </div><!-- /calendar -->
+
+                    </div>
+
+                    <div class="col-md-4 custom-md-4">
+
+                        <!-- title -->
+                        <div class="title">
+                            <h3>Bevorstehend</h3>
+                            <p>Samstag, 22 Februar 2022</p>
+                        </div><!-- /title -->
+
+                        <!-- lessons -->
+                        <div class="lessons boxShadow">
+                            <h2>Lektionen</h2>
+
+                            <!-- lessons-details -->
+                            <div class="lessons-details">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="lsname">
+                                            <div class="count">01</div>
+
+                                            <div class="cntnt">
+                                                <h4>English mit „Max Mustermann“</h4>
+                                                <h5><span>07:00 - 07:45 </span></h5>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy
+                                                    eirmod
+                                                    tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                                            </div>
+
+                                            <div class="dot active"><span></span></div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-3">
+                                        <div class="less-btn d-none">
+                                            <a href="#"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /lessons-details -->
+
+                            <!-- lessons-details -->
+                            <div class="lessons-details">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="lsname">
+                                            <div class="count">02</div>
+
+                                            <div class="cntnt">
+                                                <h4>(Subject) „mit“ (Name)</h4>
+                                                <h5><span>08:30 - 09:15 (time) </span></h5>
+                                                <p>(Description)</p>
+                                            </div>
+
+                                            <div class="dot"><span></span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="less-btn">
+                                            <a href="#">„Join meeting“</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /lessons-details -->
+
+                            <!-- lessons-details -->
+                            <div class="lessons-details">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="lsname">
+                                            <div class="count">03</div>
+
+                                            <div class="cntnt">
+                                                <h4>English mit „Max Mustermann“</h4>
+                                                <h5><span>07:00 - 07:45 </span></h5>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy
+                                                    eirmod
+                                                    tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                                            </div>
+
+                                            <div class="dot"><span></span></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="less-btn">
+                                            <a href="#">Beitreten</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /lessons-details -->
+
+                            <!-- lessons-details -->
+                            <div class="lessons-details">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="lsname">
+                                            <div class="count">04</div>
+
+                                            <div class="cntnt">
+                                                <h4>English mit „Max Mustermann“</h4>
+                                                <h5><span>07:00 - 07:45 </span></h5>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy
+                                                    eirmod
+                                                    tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                                            </div>
+
+                                            <div class="dot"><span></span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="less-btn">
+                                            <a href="#">Beitreten</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /lessons-details -->
+
+                        </div><!-- /lessons -->
+
+                    </div>
+
+                    <div class="col-md-4 custom-md-4">
+
+                        <!-- title -->
+                        <div class="title">
+                            <h3>statistics</h3>
+                            <p>Diese zeigen deine Effizienz auf</p>
+                        </div><!-- /title -->
+
+                        <!-- custom-flex-sec -->
+                        <div class="custom-flex-sec">
+                            <!-- graph -->
+                            <div class="graph mb-28 boxShadow">
+                                <div class="graph-img">
+                                    <img src="../assets/img/graph.png" alt="graph" class="img-fluid">
+                                </div>
+
+                                <div class="graph-content">
+                                    <p>Lektion</p>
+                                    <p><span>Lektionen diese Woche</span></p>
+                                </div>
+                            </div><!-- /graph -->
+
+                            <!-- lessons-completed -->
+                            <div class="lessons-completed boxShadow mb-28">
+                                <div class="lesson-ctn">
+                                    <h2>45+</h2>
+                                    <p>Lektion <br>
+                                        absolviert</p>
+                                </div>
+                            </div><!-- /lessons-completed -->
+
+                            <!-- recent-transaction -->
+                            <div class="rectransaction boxShadow">
+                                <div class="rectransaction-content">
+                                    <h3>Letzte Transaktionen</h3>
+
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Betrag</th>
+                                                <th>Fach</th>
+                                                <th>Datum</th>
+                                                <th>Name</th>
+                                            </tr>
+                                        </thead>
+
+
+                                        <tbody>
+                                            <tr>
+                                                <td>45 CHF</td>
+                                                <td>Physik</td>
+                                                <td>21.02.2022</td>
+                                                <td>Max Mustermann</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>60 CHF</td>
+                                                <td>BWL</td>
+                                                <td>21.02.2022</td>
+                                                <td>Max Mustermann</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div><!-- /recent-transaction -->
+                        </div><!-- /custom-flex-sec -->
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /main-wrapper -->
+
+    </section>
+
+    <!--=============================================================================================
+---------------------------- FOOTER-SECTION --------------------------------------------
+===================================================================================================-->
+
+
+    <footer class="footer">
+
+
+
+    </footer>
+
+    <!-- scroll -->
+    <a href="#" id="scroll" style="display: inline;"><span></span></a><!-- /scroll -->
+
+    <!--script-src-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/calendar.js"></script>
+
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>
