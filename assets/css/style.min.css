@@ -2104,6 +2104,10 @@ input:visited {
   background-color: #fff;
 }
 
+.header.navbar_custom.sticky {
+  width: 100vw;
+}
+
 .header_user-dtl .media {
   display: -webkit-box;
   display: -ms-flexbox;

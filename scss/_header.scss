@@ -17,6 +17,12 @@
         background-color: $white;
     }
 
+    &.navbar_custom {
+        &.sticky {
+            width: 100vw;
+        }
+    }
+
     &_user-dtl {
         .media {
             display: flex;
