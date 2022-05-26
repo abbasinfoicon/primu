@@ -2733,6 +2733,12 @@ input[type="number"] {
   margin-top: 100px;
 }
 
+@media (max-width: 1367px) {
+  .mt-100 {
+    margin-bottom: 50px;
+  }
+}
+
 .login {
   position: relative;
   background-color: #fff;
@@ -2746,6 +2752,17 @@ input[type="number"] {
   margin-bottom: 50px;
 }
 
+@media (max-width: 991px) {
+  .login {
+    padding: 50px 30px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
+}
+
 .login-sec-title {
   margin-bottom: 50px;
 }
@@ -2757,10 +2774,22 @@ input[type="number"] {
   font-family: "Bebas Neue", cursive;
 }
 
+@media (max-width: 991px) {
+  .login-sec h2 {
+    font-size: 45px;
+  }
+}
+
 .login-sec p {
   font-size: 18px;
   color: #3F3F3F;
   text-align: center;
+}
+
+@media (max-width: 991px) {
+  .login-sec p {
+    font-size: 15px;
+  }
 }
 
 .login-sec .form-password-eye {
@@ -2963,6 +2992,7 @@ input[type="number"] {
   position: absolute;
   z-index: 0;
   top: 0;
+  overflow: hidden;
 }
 
 .animation_clouds img {

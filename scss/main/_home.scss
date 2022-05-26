@@ -110,5 +110,9 @@ input[type="number"] {
 // mt-100
 .mt-100 {
     margin-top: 100px;
+
+    @include mq(max, $laptop) {
+        margin-bottom: 50px;
+    }
 }
 // header end
