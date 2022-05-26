@@ -138,25 +138,38 @@
             // show-password end
         }
 
-        // input-drop-down start
-        function readUrl(input) {
-
-            if (input.files && input.files[0]) {
-                let reader = new FileReader();
-                reader.onload = (e) => {
-                    let imgData = e.target.result;
-                    let imgName = input.files[0].name;
-                    input.setAttribute("data-title", imgName);
-                    console.log(e.target.result);
+        if ($('.form-control-file').length > 0) {
+            // input-drop-down start
+            function readUrl(input) {
+                if (input.files && input.files[0]) {
+                    let reader = new FileReader();
+                    reader.onload = (e) => {
+                        let imgData = e.target.result;
+                        let imgName = input.files[0].name;
+                        input.setAttribute("data-title", imgName);
+                        console.log(e.target.result);
+                    }
+                    reader.readAsDataURL(input.files[0]);
                 }
-                reader.readAsDataURL(input.files[0]);
             }
+            // input-drop-down end
+        }
+
+        if ($('.toggle_btn').length > 0) {
+
+            // toggle_btn
+            $(".toggle_btn").click(function () {
+                $(this).find('i').toggleClass('fa-bars fa-xmark');
+                $('.aside').toggleClass('close');
+                $('.body-section').toggleClass('open');
+            });
+            // toggle_btn
 
         }
-        // input-drop-down end
+
+
 
         // WOW active
         new WOW().init();
     });
-
 })(jQuery);

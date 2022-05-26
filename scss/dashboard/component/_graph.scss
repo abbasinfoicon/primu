@@ -6,6 +6,10 @@
         width: calc(50% - 15px);
     }
 
+    @include mq(max, $laptop_md) {
+        width: 100%;
+    }
+
     &-img {
         position: relative;
 

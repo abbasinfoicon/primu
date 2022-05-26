@@ -189,6 +189,27 @@ input:visited {
   background-color: #00A8CE;
   height: 100vh;
   float: left;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .aside {
+    width: 300px;
+  }
+  .aside.close {
+    width: 60px;
+    overflow: hidden;
+  }
+  .aside.close .name-sec a span {
+    display: none;
+  }
+  .aside.close .name-sec a img {
+    display: none;
+  }
 }
 
 .aside .name-sec {
@@ -208,6 +229,17 @@ input:visited {
   padding-left: 38px;
 }
 
+@media (max-width: 991px) {
+  .aside .name-sec a {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+.aside .name-sec a img {
+  display: none;
+}
+
 .aside .menu-sec ul li a {
   font-size: 18px;
   color: #fff;
@@ -221,6 +253,13 @@ input:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 991px) {
+  .aside .menu-sec ul li a {
+    padding-left: 10px;
+    border-width: 5px;
+  }
 }
 
 .aside .menu-sec ul li a:hover {
@@ -246,6 +285,12 @@ input:visited {
   background-color: #00A8CE;
 }
 
+@media (max-width: 991px) {
+  .aside .logo-sec {
+    padding-left: 0;
+  }
+}
+
 .aside .logo-sec a {
   display: block;
 }
@@ -254,9 +299,36 @@ input:visited {
   width: auto;
 }
 
+.aside .logo-sec-logo {
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .aside .logo-sec-logo {
+    display: none;
+  }
+}
+
+.aside .logo-sec-icon {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .aside .logo-sec-icon {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .calendar {
   padding: 40px 25px;
   position: relative;
+}
+
+@media (max-width: 1367px) {
+  .calendar {
+    margin-bottom: 30px;
+  }
 }
 
 .calendar-wrapper {
@@ -310,7 +382,7 @@ input:visited {
 
 .calendar #divCal table tbody tr td.today {
   font-weight: bold;
-  background: #DADADA;
+  background: #dadada;
   color: #000;
   border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -344,7 +416,7 @@ input:visited {
 }
 
 .calendar-reminder .img-style.disable:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -405,6 +477,12 @@ input:visited {
   }
 }
 
+@media (max-width: 1199px) {
+  .graph {
+    width: 100%;
+  }
+}
+
 .graph-img {
   position: relative;
 }
@@ -435,6 +513,12 @@ input:visited {
 
 .lessons {
   padding: 20px 25px;
+}
+
+@media (max-width: 1367px) {
+  .lessons {
+    margin-bottom: 30px;
+  }
 }
 
 .lessons h2 {
@@ -559,6 +643,12 @@ input:visited {
 @media (max-width: 1367px) {
   .lessons-completed {
     width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 1199px) {
+  .lessons-completed {
+    width: 100%;
   }
 }
 
@@ -839,6 +929,12 @@ input:visited {
 .listUser {
   padding: 21px 12px;
   border: 1px solid #e0e3ef;
+}
+
+@media (max-width: 1199px) {
+  .listUser {
+    margin-bottom: 30px;
+  }
 }
 
 .listUser-chat {
@@ -1513,6 +1609,12 @@ input:visited {
   padding: 30px;
 }
 
+@media (max-width: 1367px) {
+  .transactions {
+    margin-bottom: 30px;
+  }
+}
+
 .check {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1857,9 +1959,21 @@ input:visited {
   .main-wrapper .custom-md-4 {
     width: 50%;
   }
+}
+
+@media (max-width: 1501px) and (max-width: 1199px) {
+  .main-wrapper .custom-md-4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1501px) {
   .main-wrapper .custom-md-4:nth-child(3) {
     width: 100%;
   }
+}
+
+@media (max-width: 1501px) {
   .main-wrapper .custom-md-4 .custom-flex-sec {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1869,9 +1983,18 @@ input:visited {
   }
 }
 
-@media (max-width: 1501px) and (max-width: 1367px) {
+@media (max-width: 1367px) {
   .main-wrapper .custom-md-4 .custom-flex-sec {
     gap: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .main-wrapper .custom-md-4 .custom-flex-sec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1884,6 +2007,13 @@ input:visited {
   .main-wrapper.marketplace {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .requests-pg .col-md-4,
+  .requests-pg .col-md-8 {
+    width: 100%;
   }
 }
 
@@ -1937,6 +2067,12 @@ input:visited {
 @media (max-width: 1367px) {
   #profileModal .modal-dialog {
     max-width: 75vw;
+  }
+}
+
+@media (max-width: 1199px) {
+  #profileModal .modal-dialog {
+    max-width: 80vw;
   }
 }
 
@@ -2193,6 +2329,12 @@ input:visited {
   background-color: #fff;
 }
 
+@media (max-width: 991px) {
+  .header.sticky {
+    width: calc(100vw - 300px);
+  }
+}
+
 .header.navbar_custom.sticky {
   width: 100vw;
 }
@@ -2264,6 +2406,25 @@ input:visited {
   border-radius: 100%;
   top: 0;
   right: 0;
+}
+
+.toggle_btn {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.toggle_btn a {
+  color: #00A8CE;
+}
+
+@media (max-width: 991px) {
+  .toggle_btn {
+    display: block;
+  }
 }
 
 .progress-wrap {
@@ -2450,6 +2611,23 @@ input:visited {
 
 .body-section {
   margin-left: 323px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .body-section {
+    margin-left: 300px;
+  }
+  .body-section.open {
+    margin-left: 60px;
+  }
+  .body-section.open .header.sticky {
+    width: calc(100vw - 60px);
+  }
 }
 
 .home-page {
@@ -2472,6 +2650,12 @@ input:visited {
 
 .title {
   margin-bottom: 36px;
+}
+
+@media (max-width: 1367px) {
+  .title {
+    margin-bottom: 26px;
+  }
 }
 
 .title h3 {

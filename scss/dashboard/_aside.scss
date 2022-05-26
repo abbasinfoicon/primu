@@ -5,6 +5,29 @@
     background-color: $main;
     height: 100vh;
     float: left;
+    @include transition(0.5s);
+
+    @include mq(max, $tab) {
+        width: 300px;
+
+        &.close {
+            width: 60px;
+            overflow: hidden;
+
+            // name-sec
+            .name-sec {
+                a {
+                    span {
+                        display: none;
+                    }
+
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 
     // name-sec
     .name-sec {
@@ -18,7 +41,13 @@
             width: 100%;
             padding-left: 38px;
 
+            @include mq(max, $tab) {
+                padding-left: 0;
+                text-align: center;
+            }
+
             img {
+                display: none;
             }
         }
     }
@@ -36,6 +65,11 @@
                     border-left: 10px solid $main;
                     display: flex;
                     align-items: center;
+
+                    @include mq(max, $tab) {
+                        padding-left: 10px;
+                        border-width: 5px;
+                    }
 
                     &:hover {
                         background: rgba(255, 255, 255, 0.29);
@@ -66,11 +100,32 @@
         padding-left: 50px;
         background-color: $main;
 
+        @include mq(max, $tab) {
+            padding-left: 0;
+        }
+
         a {
             display: block;
 
             img {
                 width: auto;
+            }
+        }
+
+        &-logo {
+            margin: 0 auto;
+
+            @include mq(max, $tab) {
+                display: none;
+            }
+        }
+
+        &-icon {
+            display: none;
+
+            @include mq(max, $tab) {
+                display: block;
+                margin: 0 auto;
             }
         }
     }

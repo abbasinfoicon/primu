@@ -20,17 +20,27 @@
         @include mq(max, $desktop_md) {
             width: 50%;
 
-            &:nth-child(3) {
+            @include mq(max, $laptop_md) {
                 width: 100%;
             }
 
-            .custom-flex-sec {
+            &:nth-child(3) {
+                width: 100%;
+            }
+        }
+
+        .custom-flex-sec {
+            @include mq(max, $desktop_md) {
                 display: flex;
                 flex-wrap: wrap;
+            }
 
-                @include mq(max, $laptop) {
-                    gap: 30px;
-                }
+            @include mq(max, $laptop) {
+                gap: 30px;
+            }
+
+            @include mq(max, $laptop_md) {
+                flex-direction: column;
             }
         }
     }
@@ -46,6 +56,17 @@
     }
 }
 
+// requests-pg
+.requests-pg {
+    .col-md-4,
+    .col-md-8 {
+        @include mq(max, $laptop_md) {
+            width: 100%;
+        }
+    }
+}
+
+// listUser
 .listUser,
 .message-chat {
     height: 648px;

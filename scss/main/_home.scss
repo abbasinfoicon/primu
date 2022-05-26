@@ -1,6 +1,21 @@
 // header start
 .body-section {
     margin-left: 323px;
+    @include transition(0.5s);
+
+    @include mq(max, $tab) {
+        margin-left: 300px;
+
+        &.open {
+            margin-left: 60px;
+
+            .header {
+                &.sticky {
+                    width: calc(100vw - 60px);
+                }
+            }
+        }
+    }
 }
 
 // home-page
@@ -17,6 +32,10 @@
 // title
 .title {
     margin-bottom: 36px;
+
+    @include mq(max, $laptop) {
+        margin-bottom: 26px;
+    }
 
     h3 {
         font-size: 22px;

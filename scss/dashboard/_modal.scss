@@ -9,6 +9,10 @@
             @include mq(max, $laptop) {
                 max-width: 75vw;
             }
+
+            @include mq(max, $laptop_md) {
+                max-width: 80vw;
+            }
         }
 
         &-content {

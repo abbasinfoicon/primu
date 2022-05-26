@@ -3,6 +3,10 @@
   padding: 40px 25px;
   position: relative;
 
+  @include mq(max, $laptop) {
+    margin-bottom: 30px;
+  }
+
   &-wrapper {
     position: relative;
 
@@ -58,7 +62,7 @@
 
             &.today {
               font-weight: bold;
-              background: #DADADA;
+              background: #dadada;
               color: $black;
               @include border-radius(100%);
             }
@@ -80,7 +84,6 @@
     overflow: hidden;
 
     @include mq(max, $laptop) {
-      
     }
 
     .img-style {
@@ -90,7 +93,7 @@
         position: relative;
 
         &:before {
-          content: '';
+          content: "";
           @include overlay;
           background: transparentize($white, 0.23);
         }
@@ -132,7 +135,7 @@
   }
 
   // calendar-reminder
-  .calendar-reminder{  
+  .calendar-reminder {
     position: absolute;
     bottom: 9px;
     left: 50%;

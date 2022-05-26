@@ -1,6 +1,10 @@
 // transactions start
 .transactions {
     padding: 30px;
+
+    @include mq(max, $laptop) {
+        margin-bottom: 30px;
+    }
 }
 // transactions end
 

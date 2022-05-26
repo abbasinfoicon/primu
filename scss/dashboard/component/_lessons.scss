@@ -2,6 +2,10 @@
 .lessons {
     padding: 20px 25px;
 
+    @include mq(max, $laptop) {
+        margin-bottom: 30px;
+    }
+
     h2 {
         font-size: 40px;
         color: $main;
@@ -114,6 +118,10 @@
 
         @include mq(max, $laptop) {
             width: calc(50% - 15px);
+        }
+
+        @include mq(max, $laptop_md) {
+            width: 100%;
         }
 
         .lesson-ctn {
