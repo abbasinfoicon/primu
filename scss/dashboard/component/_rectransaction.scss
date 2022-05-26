@@ -2,6 +2,11 @@
 .rectransaction {
     padding: 40px;
 
+    @include mq(max, $laptop) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
     &-content {
         h3 {
             font-size: 22px;

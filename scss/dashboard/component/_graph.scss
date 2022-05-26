@@ -2,6 +2,10 @@
 .graph {
     position: relative;
 
+    @include mq(max, $laptop) {
+        width: calc(50% - 15px);
+    }
+
     &-img {
         position: relative;
 

@@ -24,6 +24,10 @@
 
         input {
             min-width: 366px;
+
+            @include mq(max, $laptop) {
+                min-width: auto;
+            }
         }
 
         button {
@@ -62,6 +66,10 @@
         input {
             min-width: 297px;
             padding-left: 50px;
+
+            @include mq(max, $laptop) {
+                min-width: auto;
+            }
         }
     }
 

@@ -17,16 +17,20 @@
     padding: 40px 30px;
 
     .custom-md-4 {
-        @include mq(max, 1501px) {
+        @include mq(max, $desktop_md) {
             width: 50%;
 
-            &:last-child {
+            &:nth-child(3) {
                 width: 100%;
             }
 
             .custom-flex-sec {
                 display: flex;
                 flex-wrap: wrap;
+
+                @include mq(max, $laptop) {
+                    gap: 30px;
+                }
             }
         }
     }
@@ -34,6 +38,11 @@
     &.marketplace {
         padding-left: 166px;
         padding-right: 166px;
+
+        @include mq(max, $laptop) {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }
 
@@ -43,6 +52,10 @@
     position: relative;
     overflow: hidden;
     overflow-y: auto;
+
+    @include mq(max, $laptop) {
+        height: auto;
+    }
 
     &::-webkit-scrollbar {
         display: none;
@@ -60,6 +73,10 @@
 .marketplace-pg {
     width: 84%;
     margin: 0 auto;
+
+    @include mq(max, $laptop) {
+        width: 100%;
+    }
 }
 
 // bg

@@ -2,6 +2,10 @@
 .profile {
     padding: 30px;
 
+    @include mq(max, $laptop) {
+        margin-bottom: 30px;
+    }
+
     &_containers {
         position: relative;
         margin: auto;

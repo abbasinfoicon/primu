@@ -335,12 +335,6 @@ input:visited {
   overflow: hidden;
 }
 
-@media (max-width: 1350px) {
-  .calendar-reminder {
-    width: 100%;
-  }
-}
-
 .calendar-reminder .img-style {
   margin-bottom: 0;
 }
@@ -403,6 +397,12 @@ input:visited {
 
 .graph {
   position: relative;
+}
+
+@media (max-width: 1367px) {
+  .graph {
+    width: calc(50% - 15px);
+  }
 }
 
 .graph-img {
@@ -556,6 +556,12 @@ input:visited {
   min-height: 170px;
 }
 
+@media (max-width: 1367px) {
+  .lessons-completed {
+    width: calc(50% - 15px);
+  }
+}
+
 .lessons-completed .lesson-ctn {
   text-align: center;
   padding: 30px 15px;
@@ -578,6 +584,13 @@ input:visited {
 
 .rectransaction {
   padding: 40px;
+}
+
+@media (max-width: 1367px) {
+  .rectransaction {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .rectransaction-content h3 {
@@ -711,6 +724,12 @@ input:visited {
   min-width: 366px;
 }
 
+@media (max-width: 1367px) {
+  .search_001 input {
+    min-width: auto;
+  }
+}
+
 .search_001 button {
   position: absolute;
   right: 0;
@@ -752,6 +771,12 @@ input:visited {
 .search_002 input {
   min-width: 297px;
   padding-left: 50px;
+}
+
+@media (max-width: 1367px) {
+  .search_002 input {
+    min-width: auto;
+  }
 }
 
 .search_range {
@@ -852,6 +877,7 @@ input:visited {
 .listUser-chat .media-left {
   width: 40px;
   height: 40px;
+  min-width: 40px;
   overflow: hidden;
   border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -1234,6 +1260,12 @@ input:visited {
   padding: 30px;
 }
 
+@media (max-width: 1367px) {
+  .addNew {
+    margin-bottom: 30px;
+  }
+}
+
 .addNew-cart {
   background: #679cf6;
   background: -webkit-gradient(linear, left top, left bottom, from(#679cf6), to(#4072ee));
@@ -1342,7 +1374,7 @@ input:visited {
   font-weight: 400;
   text-align: center;
   border: none;
-  background: #F9FAFE;
+  background: #f9fafe;
   display: block;
   width: 100%;
   padding: 15px;
@@ -1360,6 +1392,13 @@ input:visited {
 
 .rectransaction {
   padding: 40px;
+}
+
+@media (max-width: 1367px) {
+  .rectransaction {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .rectransaction-content h3 {
@@ -1626,6 +1665,12 @@ input:visited {
   padding: 30px;
 }
 
+@media (max-width: 1367px) {
+  .profile {
+    margin-bottom: 30px;
+  }
+}
+
 .profile_containers {
   position: relative;
   margin: auto;
@@ -1694,10 +1739,22 @@ input:visited {
   padding: 30px;
 }
 
+@media (max-width: 1367px) {
+  .settings {
+    margin-bottom: 30px;
+  }
+}
+
 .settings-ul {
   min-height: 528px;
   overflow: hidden;
   overflow-y: auto;
+}
+
+@media (max-width: 1367px) {
+  .settings-ul {
+    min-height: auto;
+  }
 }
 
 .settings-ul li a {
@@ -1800,7 +1857,7 @@ input:visited {
   .main-wrapper .custom-md-4 {
     width: 50%;
   }
-  .main-wrapper .custom-md-4:last-child {
+  .main-wrapper .custom-md-4:nth-child(3) {
     width: 100%;
   }
   .main-wrapper .custom-md-4 .custom-flex-sec {
@@ -1812,9 +1869,22 @@ input:visited {
   }
 }
 
+@media (max-width: 1501px) and (max-width: 1367px) {
+  .main-wrapper .custom-md-4 .custom-flex-sec {
+    gap: 30px;
+  }
+}
+
 .main-wrapper.marketplace {
   padding-left: 166px;
   padding-right: 166px;
+}
+
+@media (max-width: 1367px) {
+  .main-wrapper.marketplace {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .listUser,
@@ -1823,6 +1893,13 @@ input:visited {
   position: relative;
   overflow: hidden;
   overflow-y: auto;
+}
+
+@media (max-width: 1367px) {
+  .listUser,
+  .message-chat {
+    height: auto;
+  }
 }
 
 .listUser::-webkit-scrollbar,
@@ -1841,6 +1918,12 @@ input:visited {
   margin: 0 auto;
 }
 
+@media (max-width: 1367px) {
+  .marketplace-pg {
+    width: 100%;
+  }
+}
+
 .bg_white {
   background-color: #fff;
 }
@@ -1849,6 +1932,12 @@ input:visited {
   margin: 0;
   max-width: 63vw;
   margin-left: auto;
+}
+
+@media (max-width: 1367px) {
+  #profileModal .modal-dialog {
+    max-width: 75vw;
+  }
 }
 
 #profileModal .modal-content {

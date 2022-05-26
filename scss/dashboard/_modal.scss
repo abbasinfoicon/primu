@@ -5,6 +5,10 @@
             margin: 0;
             max-width: 63vw;
             margin-left: auto;
+
+            @include mq(max, $laptop) {
+                max-width: 75vw;
+            }
         }
 
         &-content {

@@ -2,6 +2,10 @@
 .addNew {
     padding: 30px;
 
+    @include mq(max, $laptop) {
+        margin-bottom: 30px;
+    }
+
     &-cart {
         @include background-gradient(#679cf6, #4072ee, "vertical");
         @include border-radius(5px);
@@ -94,7 +98,7 @@
                     @include roboto(regular400);
                     text-align: center;
                     border: none;
-                    background: #F9FAFE;
+                    background: #f9fafe;
                     display: block;
                     width: 100%;
                     padding: 15px;

@@ -112,6 +112,10 @@
         position: relative;
         min-height: 170px;
 
+        @include mq(max, $laptop) {
+            width: calc(50% - 15px);
+        }
+
         .lesson-ctn {
             text-align: center;
             padding: 30px 15px;
