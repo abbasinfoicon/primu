@@ -227,6 +227,7 @@ input:visited {
   color: #fff;
   width: 100%;
   padding-left: 38px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 991px) {
@@ -4128,6 +4129,12 @@ input:visited {
 .header_user-dtl .media .media-left img {
   width: 100%;
   height: auto;
+}
+
+.header_user-dtl .media .media-body h2 {
+  font-size: 40px;
+  color: #00A8CE;
+  font-family: "Bebas Neue", cursive;
 }
 
 .header_user-dtl .media .media-body h3 {

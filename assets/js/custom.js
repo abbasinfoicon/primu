@@ -193,14 +193,12 @@
 
         if ($('#phone').length > 0) {
             // countery-list start
-
             var telInput = $("#phone"),
                 errorMsg = $("#error-msg"),
                 validMsg = $("#valid-msg");
 
             // initialise plugin
             telInput.intlTelInput({
-
                 allowExtensions: true,
                 formatOnDisplay: true,
                 autoFormat: true,
@@ -224,13 +222,11 @@
                 },
                 utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.9/js/utils.js"
             });
-
             var reset = function () {
                 telInput.removeClass("error");
                 errorMsg.addClass("hide");
                 validMsg.addClass("hide");
             };
-
             // on blur: validate
             telInput.blur(function () {
                 reset();
@@ -243,7 +239,6 @@
                     }
                 }
             });
-
             // on keyup / change flag: reset
             telInput.on("keyup change", reset);
             // countery-list end
