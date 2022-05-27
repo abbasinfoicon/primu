@@ -65,10 +65,12 @@
                     border-left: 10px solid $main;
                     display: flex;
                     align-items: center;
+                    margin-bottom: 30px;
 
                     @include mq(max, $tab) {
                         padding-left: 10px;
                         border-width: 5px;
+                        margin-bottom: 15px;
                     }
 
                     &:hover {

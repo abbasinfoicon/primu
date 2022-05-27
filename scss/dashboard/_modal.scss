@@ -1,5 +1,14 @@
 // profileModal
 #profileModal {
+    right: -100%;
+    left: auto;
+    @include transition(0.7s);
+
+    &.show {
+        @include transition(0.7s);
+        right: 0;
+    }
+
     .modal {
         &-dialog {
             margin: 0;

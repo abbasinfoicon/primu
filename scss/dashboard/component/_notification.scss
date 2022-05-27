@@ -1,0 +1,67 @@
+// notification start
+.notification {
+    &_popup {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 304px;
+        z-index: 999;
+        @include transition(0.5s);
+        overflow: hidden;
+        opacity: 0;
+        overflow-y: auto;
+
+        &.show {
+            height: 494px;
+            opacity: 1;
+        }
+
+        &.boxShadow {
+            background-color: $main;
+            @include border-radius(20px);
+        }
+
+        .media {
+            background-color: $white;
+            padding: 7px 10px;
+            @include border-radius(12px);
+            margin: 14px 20px;
+            min-height: 52px;
+            @include transition(0.5s);
+
+            &:first-child {
+                margin-top: 30px;
+            }
+
+            &:hover {
+                @include transform(scale(1.05));
+            }
+
+            &-left {
+                margin-right: 6px;
+                width: 38px;
+                height: 38px;
+                min-width: 38px;
+                @include border-radius(100%);
+                overflow: hidden;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &-body {
+                p {
+                    font-size: 10px;
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+// notification start
