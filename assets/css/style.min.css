@@ -4389,7 +4389,11 @@ input:visited {
   color: #00A8CE;
 }
 
-.navbar_custom .navbar-nav li a:hover:after {
+.navbar_custom .navbar-nav li.active a {
+  color: #00A8CE;
+}
+
+.navbar_custom .navbar-nav li.active a:after {
   width: 100%;
 }
 
@@ -4775,6 +4779,7 @@ input[type="number"] {
 .animation_clouds {
   position: absolute;
   z-index: 0;
+  right: 0;
   top: 0;
   overflow: hidden;
 }

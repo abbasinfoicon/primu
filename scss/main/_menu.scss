@@ -1,6 +1,5 @@
 // navbar-custom start
 .navbar_custom {
-
     .navbar {
         &-custom {
             justify-content: space-between;
@@ -42,6 +41,16 @@
                     &:hover {
                         color: $main;
 
+                        &:after {
+                            // width: 100%;
+                        }
+                    }
+                }
+
+                &.active {
+                    a {
+                        color:  $main;
+                        
                         &:after {
                             width: 100%;
                         }
