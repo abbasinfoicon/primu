@@ -62,25 +62,44 @@
                     display: inline-block;
 
                     a {
-                        width: 26.44px;
-                        height: 26.44px;
+                        font-size: 11px;
+                        color: transparentize($black, 0.3);
+                        font-weight: bold;
+                        line-height: 1;
+                        text-transform: uppercase;
                         display: block;
-                        @include border-radius(100%);
-                        border: 1px solid $main;
-                        background-color: $main;
-                        color: $white;
-                        margin: 0 15px;
                         text-align: center;
-                        justify-content: center;
-                        align-items: center;
-                        display: flex;
-
-                        &:hover {
-                            background-color: $white;
-                            color: $main;
-                        }
 
                         i {
+                            width: 26.44px;
+                            height: 26.44px;
+                            display: block;
+                            margin: 0 15px 10px;
+                            text-align: center;
+                            justify-content: center;
+                            align-items: center;
+                            display: flex;
+                            font-size: 18px;
+                            font-weight: 400;
+
+                            &.fa-solid {
+                                @include border-radius(100%);
+                                border: 1px solid $main;
+                                background-color: $main;
+                                color: $white;
+                                font-weight: bold;
+                            }
+                        }
+
+                        &:hover {
+                            color: $main;
+
+                            i {
+                                &.fa-solid {
+                                    background-color: $white;
+                                    color: $main;
+                                }
+                            }
                         }
                     }
                 }

@@ -8,12 +8,12 @@
         z-index: 999;
         @include transition(0.5s);
         overflow: hidden;
-        opacity: 0;
+        display: none;
         overflow-y: auto;
 
         &.show {
             height: 494px;
-            opacity: 1;
+            display: block;
         }
 
         &.boxShadow {
