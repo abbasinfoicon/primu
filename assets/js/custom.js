@@ -170,12 +170,13 @@
         if ($('.notification_popup').length > 0) {
 
             // notification_id
-            $(function () {
-                $('.notification_id').hover(function () {
-                    $('.notification_popup').addClass('show');
-                }, function () {
-                    $('.notification_popup').removeClass('show');
-                });
+            $(".notification_id, .notification_popup").hover(function () {
+                $('.notification_popup').addClass('show')
+            }, function () {
+                setTimeout(function () {
+                    if (!($('.notification_popup:hover').length > 0))
+                        $('.notification_popup').removeClass('show');
+                }, 300);
             });
             // notification_id
 
