@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Admin Dashboard | PRIMU</title>
+    <title>Admin Settings | PRIMU</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="../assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="../assets/stylesheets/font-awesome.min.css" rel="stylesheet">
@@ -51,7 +51,7 @@
         <!-- menu-sec -->
         <div class="menu-sec">
             <ul>
-                <li class="active"><a href="dashboard.html"><img src="../assets/img/dashbord.png" alt=""
+                <li><a href="dashboard.html"><img src="../assets/img/dashbord.png" alt=""
                             class="img-fluid">
                         Dashboard</a></li>
                 <li><a href="account.html"><img src="../assets/img/account.png" alt="" class="img-fluid">
@@ -62,7 +62,7 @@
                 <li><a href="payment.html"><img src="../assets/img/cashapp.png" alt="" class="img-fluid">
                         Transaktionen</a>
                 </li>
-                <li><a href="setting.html"><img src="../assets/img/einstell.png" alt="" class="img-fluid">
+                <li class="active"><a href="setting.html"><img src="../assets/img/einstell.png" alt="" class="img-fluid">
                         Einstellungen</a></li>
             </ul>
         </div><!-- /menu-sec -->
@@ -121,50 +121,31 @@
         </header>
 
         <!-- main-wrapper -->
-        <div class="main-wrapper bg_white dashboard-pg">
+        <div class="main-wrapper bg_white setting-pg">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4 custom-md-4">
 
                         <!-- title -->
                         <div class="title">
-                            <h3>Kalendar</h3>
-                            <p>Samstag, 22 Februar 2022</p>
+                            <h3>Einstellungen</h3>
+                            <p>Bearbeiten</p>
                         </div><!-- /title -->
 
-                        <!-- calendar -->
-                        <div class="calendar boxShadow">
-                            <div class="calendar-wrapper">
-                                <button id="btnPrev" type="button" class="btn-prev">
-                                    <img src="../assets/img/left-img.png" alt="" class="img-fluid">
-                                </button>
+                        <!-- settings -->
+                        <div class="settings boxShadow">
+                            <ul class="settings-ul">
+                                <li><a href="#">Allgemeine Einstellungen</a></li>
+                                <li><a href="#">Benachrichtigungen</a></li>
+                                <li><a href="#">Profileinstellungen</a></li>
+                                <li><a href="#">Profileinstellungen</a></li>
+                            </ul>
 
-                                <button id="btnNext" type="button" class="btn-next">
-                                    <img src="../assets/img/right-img.png" alt="" class="img-fluid">
-                                </button>
-                                <div id="divCal"></div>
+                            <div class="from-group">
+                                <a href="#" class="btn-speichern">Speichern</a>
                             </div>
-
-                            <!-- calendar-reminder -->
-                            <div class="calendar-reminder d-none">
-                                <div class="img-style">
-                                    <a href="#"><img src="../assets/img/student1.png" alt="" class="img-fluid"></a>
-                                </div>
-
-                                <div class="content-style">
-                                    <a href="#">
-                                        <h4>Sara Mustermann</h4>
-                                    </a>
-                                    <p>Mathematik, Chemie</p>
-
-                                    <a href="#">
-                                        <h3>CHF 50 - Lektion</h3>
-                                    </a>
-
-                                    <p><span>Bachelor in Pharmazie</span></p>
-                                </div>
-                            </div><!-- /calendar-reminder -->
-                        </div><!-- /calendar -->
+                        </div>
+                        <!-- settings -->
 
                     </div>
 
@@ -172,76 +153,34 @@
 
                         <!-- title -->
                         <div class="title">
-                            <h3>Umsatz</h3>
-                            <p>Samstag, 22 Februar 2022</p>
+                            <h3>Transaktionen</h3>
+                            <p>Sehen Sie Ihre letzten Gutschriften</p>
                         </div><!-- /title -->
 
-                        <!-- lessons -->
-                        <div class="lessons boxShadow">
-                            <h2>Lektionen</h2>
-                            <h2>530.30 CHF</h2>
-                        </div><!-- /lessons -->
-                        <br>
-                        <br>
-                        <br>
-                        <!-- title -->
-                        <div class="title">
-                            <h3>Registrationen</h3>
-                            <p>Samstag, 22 Februar 2022</p>
-                        </div><!-- /title -->
+                        <!-- transactions -->
+                        <div class="transactions boxShadow">
+                            <ul class="settings-ul">
+                                <li>
+                                    <div class="check">
+                                        <div class="check__item">
+                                            <label for="radio_email">
+                                                Sichtbarkeit E-Mail
+                                                <input type="checkbox" id="radio_email" class="default__check switchbox"
+                                                    checked>
+                                                <span class="custom__check"></span>
+                                            </label>
+                                        </div>
 
-                        <!-- lessons -->
-                        <div class="lessons boxShadow">
-                            <h2>Benutzergruppen</h2>
-                            <h2>10 Lehrer</h2>
-                            <h2>35 Schüler</h2>
-                        </div><!-- /lessons -->
+                                    </div>
+                                </li>
+                                <li><a href="#">Sichtbarkeit Nummer</a></li>
+                            </ul>
+                        </div>
+                        <!-- transactions -->
 
                     </div>
 
-                    <div class="col-md-4 custom-md-4">
-
-                        <!-- title -->
-                        <div class="title">
-                            <h3>statistics</h3>
-                            <p>Diese zeigen deine Effizienz auf</p>
-                        </div><!-- /title -->
-
-                        <!-- custom-flex-sec -->
-                        <div class="custom-flex-sec">
-                            <!-- graph -->
-                            <div class="graph mb-28 boxShadow">
-                                <div class="graph-img">
-                                    <img src="../assets/img/graph.png" alt="graph" class="img-fluid">
-                                </div>
-
-                                <div class="graph-content">
-                                    <p>Lektion</p>
-                                    <p><span>Lektionen diese Woche</span></p>
-                                </div>
-                            </div><!-- /graph -->
-
-                            <!-- lessons-completed -->
-                            <div class="lessons-completed boxShadow mb-28">
-                                <div class="lesson-ctn">
-                                    <h2>320</h2>
-                                    <p>Lektionen <br>
-                                        absolviert</p>
-                                </div>
-                            </div><!-- /lessons-completed -->
-
-                            <!-- lessons-completed -->
-                            <div class="lessons-completed boxShadow">
-                                <div class="lesson-ctn">
-                                    <p><span>Transaktionen</span></p>
-                                    <h2>220</h2>
-                                    <p>Transaktionen <br>
-                                        wurden <br>
-                                        getätigt</p>
-                                </div>
-                            </div><!-- /lessons-completed -->
-                        </div><!-- /custom-flex-sec -->
-                    </div>
+                    
                 </div>
             </div>
         </div> <!-- /main-wrapper -->

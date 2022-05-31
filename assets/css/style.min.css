@@ -680,6 +680,12 @@ input:visited {
   line-height: 1;
 }
 
+.lessons-completed .lesson-ctn p span {
+  font-size: 22px;
+  display: block;
+  margin-bottom: 30px;
+}
+
 .lessons_customScroll {
   height: 500px;
   overflow: hidden;
@@ -1206,6 +1212,10 @@ input:visited {
 
 .message .media-right ul li a:hover i.fa-solid {
   background-color: #fff;
+  color: #00A8CE;
+}
+
+.message .media-right ul li a.active {
   color: #00A8CE;
 }
 

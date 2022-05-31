@@ -144,6 +144,12 @@
                 color: $black;
                 @include inter(medium500);
                 line-height: 1;
+
+                span {
+                    font-size: 22px;
+                    display: block;
+                    margin-bottom: 30px;
+                }
             }
         }
     }
@@ -153,7 +159,6 @@
         overflow: hidden;
         overflow-y: auto;
         padding-right: 20px;
-
     }
 }
 // lessons end

@@ -192,6 +192,16 @@
             // notification_id
         }
 
+
+        if ($('.favorite').length > 0) {
+
+            // notification_id
+            $('.favorite').click(function () {
+                $(this).toggleClass('active');
+            });
+            // notification_id
+        }
+
         if ($('#phone').length > 0) {
             // countery-list start
             var telInput = $("#phone"),
