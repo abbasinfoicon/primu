@@ -774,7 +774,7 @@ input:visited {
 }
 
 .irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before {
-  content: "CHF";
+  content: "";
   border: none;
   font-size: 12px;
   width: 25px;
