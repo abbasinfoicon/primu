@@ -239,6 +239,43 @@
                                 }
                             }
                         }
+
+                        &-biograph {
+                            position: relative;
+
+                            .form {
+                                &-group {
+                                    margin-bottom: 10px;
+                                }
+
+                                &-control {
+                                    @include border-radius(25px);
+                                    border: none;
+                                    padding: 8px 40px;
+                                    font-size: 24px;
+                                    color: $third;
+                                }
+
+                                p {
+                                    font-size: 18px;
+                                    color: $text_color;
+                                    margin-bottom: 8px;
+                                }
+
+                                ul {
+                                    li {
+                                        display: inline-block;
+
+                                        a {
+                                            color: $main;
+                                            display: block;
+                                            text-decoration: underline;
+                                            padding-right: 18px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

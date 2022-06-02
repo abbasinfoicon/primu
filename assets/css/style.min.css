@@ -1074,7 +1074,7 @@ input:visited {
 }
 
 .listUser-chat.notification .media-right span {
-  background: #f1623f;
+  background: #F1623F;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1608,7 +1608,7 @@ input:visited {
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  background-color: #f1623f;
+  background-color: #F1623F;
   border-radius: 22px;
   padding: 2.75px 15px;
   display: block;
@@ -4112,6 +4112,43 @@ input:visited {
   color: #00A8CE;
 }
 
+#profileModal .modal-body-content .right-st-biograph {
+  position: relative;
+}
+
+#profileModal .modal-body-content .right-st-biograph .form-group {
+  margin-bottom: 10px;
+}
+
+#profileModal .modal-body-content .right-st-biograph .form-control {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  border: none;
+  padding: 8px 40px;
+  font-size: 24px;
+  color: #F1623F;
+}
+
+#profileModal .modal-body-content .right-st-biograph .form p {
+  font-size: 18px;
+  color: #3F3F3F;
+  margin-bottom: 8px;
+}
+
+#profileModal .modal-body-content .right-st-biograph .form ul li {
+  display: inline-block;
+}
+
+#profileModal .modal-body-content .right-st-biograph .form ul li a {
+  color: #00A8CE;
+  display: block;
+  text-decoration: underline;
+  padding-right: 18px;
+}
+
 .header {
   height: 124px;
   display: -webkit-box;
@@ -4918,7 +4955,7 @@ input[type="number"] {
 }
 
 .dataBase .table-responsive::-webkit-scrollbar-thumb {
-  background: #f1623f;
+  background: #F1623F;
 }
 
 .dataBase .table-responsive:hover::-webkit-scrollbar {
@@ -4937,7 +4974,7 @@ input[type="number"] {
 .dataBase .table-responsive table thead tr th {
   font-size: 16px;
   color: #fff;
-  background-color: #f1623f;
+  background-color: #F1623F;
   font-weight: 100;
   border: none;
   -webkit-box-shadow: none;
@@ -4980,7 +5017,7 @@ input[type="number"] {
 
 .dataBase .table-responsive table tbody tr td .close-bbb {
   font-size: 24px;
-  color: #f1623f;
+  color: #F1623F;
 }
 
 .dataBase .table-responsive table tbody tr td .close-bbb:hover {
@@ -4989,6 +5026,10 @@ input[type="number"] {
 
 .dataBase .table-responsive table tbody tr:last-child td {
   border-bottom: 0;
+}
+
+.dataBase .table-responsive table tr {
+  cursor: pointer;
 }
 
 .dataBase .table-responsive table tr th,

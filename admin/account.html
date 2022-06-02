@@ -227,7 +227,7 @@
                                         </thead>
 
                                         <tbody>
-                                            <tr>
+                                            <tr data-bs-toggle="modal" data-bs-target="#profileModal">
                                                 <td>Max Mustermann</td>
                                                 <td>Lehrer</td>
                                                 <td>530 CHF</td>
@@ -362,6 +362,134 @@
     <!--=============================================================================================
 ---------------------------- FOOTER-SECTION --------------------------------------------
 ===================================================================================================-->
+
+    <!-- profileModal -->
+    <div class="modal" id="profileModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="modal-body-content">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="left-st">
+                                    <div class="left-st-img">
+                                        <img src="../assets/img/img1.png" alt="" class="img-fluid">
+                                    </div>
+
+                                    <div class="left-st-content">
+                                        <h4>E-MAIL</h4> <p>saramustermann@gmx.ch</p>
+                                        <h4>Tel.-Nr.</h4> <p>+41 89 899 89 89</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-9">
+                                <div class="right-st">
+                                    <img src="../assets/img/close.png" data-bs-dismiss="modal" alt="close"
+                                        class="img-fluid close-img">
+
+                                    <h2>Sara Mustermann</h2>
+                                    <!-- <p><small>Mathematik, Chemie</small></p> -->
+                                    <hr>
+                                    <h3>Über Mich</h3>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                        sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                                        et</p>
+                                    <hr>
+
+
+                                    <div class="right-st-biograph">
+                                        <form action="" class="form">
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="flname" id=""
+                                                    value="SARA MUSTERMANN (first- + last name)"
+                                                    placeholder="SARA MUSTERMANN (first- + last name)">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="bod" id=""
+                                                    value="03.02.1980 (birthday)" placeholder="03.02.1980 (birthday)">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="bod" id="" value="Street"
+                                                    placeholder="Street">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="bod" id=""
+                                                    value="Location" placeholder="Location">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" type="text" name="bod" id=""
+                                                    value="Highest Education" placeholder="Highest Education">
+                                            </div>
+                                            <br>
+                                            <div class="form-group">
+                                                <p>CV and Attachments</p>
+                                                <ul>
+                                                    <li><a href="#">CV Primu.pdf</a></li>
+                                                    <li><a href="#">Education.docx</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="form-group">
+                                                <p>Reset Password from this Account</p>
+                                                <ul>
+                                                    <li><a href="#">Reset</a></li>
+                                                </ul>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- /profileModal -->
 
 
     <footer class="footer">

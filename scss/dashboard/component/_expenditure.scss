@@ -27,7 +27,7 @@
             a {
                 color: $white;
                 @include poppins(regular400);
-                background-color: #f1623f;
+                background-color: $third;
                 border-radius: 22px;
                 padding: 2.75px 15px;
                 display: block;
