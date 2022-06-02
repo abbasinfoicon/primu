@@ -4557,6 +4557,43 @@ input[type="number"] {
   }
 }
 
+.btn-custom {
+  background: #00A8CE;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #00A8CE;
+  padding: 10px 15px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 8px;
+  width: 260px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-custom:hover {
+  background: #fff;
+  color: #00A8CE;
+}
+
 .login {
   position: relative;
   background-color: #fff;
@@ -4710,6 +4747,10 @@ input[type="number"] {
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.login-sec .custom-radio .d-flex label {
+  padding-right: 0;
 }
 
 .login-sec .inputDnD .form-control-file {

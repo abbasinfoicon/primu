@@ -115,4 +115,29 @@ input[type="number"] {
         margin-bottom: 50px;
     }
 }
+
+// btn-custom
+.btn-custom {
+    background: $main;
+    color: $white;
+
+    font-size: 20px;
+    border: 1px solid $main;
+    padding: 10px 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    width: 260px;
+    @include border-radius(50px);
+    @include transition(0.5s);
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+        background: $white;
+        color: $main;
+    }
+}
 // header end

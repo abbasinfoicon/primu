@@ -150,6 +150,12 @@
                     transform: rotate(45deg);
                 }
             }
+
+            .d-flex {
+                label {
+                    padding-right: 0;
+                }
+            }
         }
 
         .inputDnD {
