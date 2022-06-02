@@ -17,6 +17,7 @@
 // main-wrapper start
 .main-wrapper {
     padding: 40px 30px;
+    min-height: calc(100vh - 124px);
 
     .custom-md-4 {
         @include mq(max, $desktop_md) {

@@ -1,0 +1,119 @@
+// table start
+.dataBase {
+    .search {
+        margin-bottom: 0;
+        position: relative;
+        top: 10px;
+
+        &_001 {
+            position: relative;
+
+            input {
+                min-width: 300px;
+
+                @include mq(max, $laptop) {
+                    min-width: auto;
+                }
+            }
+        }
+    }
+
+    .table-responsive {
+        &.h540px {
+            height: 540px;
+        }
+
+        &.h512px {
+            height: 512px;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+
+            &-thumb {
+                background: #f1623f;
+            }
+        }
+
+        &:hover {
+            &::-webkit-scrollbar {
+                display: block;
+            }
+        }
+
+        table {
+            background-color: $second;
+            margin-bottom: 30px;
+
+            &.table > :not(:first-child) {
+                border-top: none;
+            }
+            thead {
+                tr {
+                    th {
+                        font-size: 16px;
+                        color: $white;
+                        background-color: #f1623f;
+                        font-weight: 100;
+                        border: none;
+                        box-shadow: none;
+                    }
+
+                    &.pt18px {
+                        th {
+                            padding-top: 18px;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    margin-bottom: 0;
+
+                    td {
+                        font-size: 15px;
+                        color: $black;
+                        background: $white;
+                        padding: 13px 10px;
+                        line-height: 1.6;
+                        border: none;
+                        border-bottom: 10px solid $second;
+
+                        .check_close {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                        }
+
+                        .custom-radio {
+                            margin-bottom: 0;
+                        }
+
+                        .close-bbb {
+                            font-size: 24px;
+                            color: #f1623f;
+
+                            &:hover {
+                                color: $main;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        td {
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            tr {
+                th,
+                td {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+// table end

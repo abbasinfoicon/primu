@@ -81,24 +81,24 @@ input {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
-}
+  width: 4px;
+  height: 4px;
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  @include border-radius(12px);
-}
+  /* Track */
+  &-track {
+    @include border-radius(12px);
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: $main;
-  @include border-radius(12px);
-}
+  /* Handle */
+  &-thumb {
+    background: $main;
+    @include border-radius(12px);
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: darken($main, 10);
+    /* Handle on hover */
+    &:hover {
+      background: darken($main, 10);
+    }
+  }
 }
 
 //main-scss
