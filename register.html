@@ -61,7 +61,7 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item"><a class="" href="index.html">Start</a></li>
                                 <li class="nav-item"><a class="" href="#">Unterricht</a></li>
-                                <li class="nav-item active"><a class="" href="register.html">Registrieren</a></li>
+                                <li class="nav-item"><a class="" href="register.html">Registrieren</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -84,106 +84,20 @@
 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-9">
+                <div class="col-lg-9 col-md-12">
                     <!-- login -->
                     <div class="login boxShadow">
                         <div class="login-sec">
                             <div class="login-sec-title">
-                                <h2>Erstelle deinen Account!</h2>
-                                <p>Bitte registriere dich für dein Account.</p>
+                                <h2>what do you want to register as?</h2>
                             </div>
 
-                            <form action="user/dashboard.html">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="vormane" placeholder="Vorname">
-                                    <label for="vormane">Vorname</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="nachname" placeholder="Nachname">
-                                    <label for="nachname">Nachname</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
-                                    <label for="email">Email</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="tel" placeholder="Tel-Nr.">
-                                    <label for="tel">Tel-Nr.</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="strasse" placeholder="Strasse">
-                                    <label for="strasse">Strasse</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="plz" placeholder="PLZ & Ort">
-                                    <label for="plz">PLZ & Ort</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="geburtsdatum"
-                                        placeholder="Geburtsdatum">
-                                    <label for="geburtsdatum">Geburtsdatum</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="woche"
-                                        placeholder="Verfügbarkeit pro Woche?">
-                                    <label for="woche">Verfügbarkeit pro Woche?</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="facher"
-                                        placeholder="Fächer die du unterrichten möchtest">
-                                    <label for="facher">Fächer die du unterrichten möchtest</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="ausbil"
-                                        placeholder="Höchstabgeschlossene Ausbildung">
-                                    <label for="ausbil">Höchstabgeschlossene Ausbildung</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="derzeitige"
-                                        placeholder="Derzeitige Tätigkeit">
-                                    <label for="derzeitige">Derzeitige Tätigkeit</label>
-                                </div>
-
-                                <div class="form-group custom-radio">
-                                    <p>Es ist mir erlaubt mit Minderjährigen zu arbeiten
-                                        und ich habe keine einschlägigen Vorstrafen betreffend Minderjähriger.*</p>
-
-                                    <input type="radio" id="ja"><label for="ja" class="p100px"> Ja</label>
-                                    <input type="radio" id="nein"><label for="nein"> Nein</label>
-                                </div>
-
-                                <div class="mb-3 inputDnD">
-                                    <label for="anhange">Lebenslauf und Anhänge</label>
-                                    <input type="file" class="form-control form-control-file" id="anhange"
-                                        onchange="readUrl(this)" data-title="Drag & drop or browse">
-                                </div>
-
-                                <div class="form-floating mb-3 form-password-eye">
-                                    <input type="password" class="form-control" id="password" placeholder="Passwort">
-                                    <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                                    <label for="password">Passwort</label>
-                                </div>
-
-                                <div class="form-floating mb-3">
-                                    <input type="password" class="form-control" id="cpass"
-                                        placeholder="Passwort wiederholen">
-                                    <label for="cpass">Passwort wiederholen</label>
-                                </div>
-
-
-
+                            <form action="register.html">
                                 <div class="form-group login-sec-btn">
-                                    <button type="button" class="btn-custom btn-login" onclick="location.href='user/dashboard.html'">Registrieren</button>
+                                    <button type="button" class="btn-custom btn-login"
+                                        onclick="location.href='teacher-reg.html'">Teacher</button>
+                                    <button type="button" class="btn-custom btn-login"
+                                        onclick="location.href='student-reg.html'">Student</button>
                                 </div>
                             </form>
                         </div>

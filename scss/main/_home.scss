@@ -76,6 +76,12 @@
             color: $black;
             @include inter(regular400);
         }
+
+        &.fsize70 {
+            h2 {
+                font-size: 70px;
+            }
+        }
     }
 }
 

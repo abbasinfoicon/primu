@@ -18,57 +18,45 @@ body {
 }
 
 @media (min-width: 1400px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
+  .container-custom {
     max-width: 1400px;
   }
 }
 
 @media (min-width: 1500px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
+  .container-custom {
     max-width: 1500px;
   }
 }
 
 @media (min-width: 1600px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
+  .container-custom {
     max-width: 1600px;
   }
 }
 
 @media (min-width: 1700px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
+  .container-custom {
     max-width: 1700px;
   }
 }
 
 @media (min-width: 1800px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
+  .container-custom {
     max-width: 1800px;
+  }
+}
+
+// opcity
+.opcity {
+  &74 {
+    opacity: 0.74;
+  }
+  &22 {
+    opacity: 0.22;
+  }
+  &5 {
+    opacity: 0.05;
   }
 }
 
