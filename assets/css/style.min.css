@@ -77,6 +77,50 @@ body {
   }
 }
 
+@media (min-width: 1500px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1500px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1600px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1700px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1800px;
+  }
+}
+
 /*=====================================================================
 ==========================   font-face  =========================
 ========================================================================*/
@@ -5204,5 +5248,139 @@ input[type="number"] {
   background: #ffc812;
   width: 6px;
   border-radius: 10px;
+}
+
+.perfect_dts h3 {
+  font-size: 50px;
+  color: #3F3F3F;
+  font-weight: bold;
+  position: relative;
+}
+
+.perfect_dts h3 span {
+  position: relative;
+}
+
+.perfect_dts h3 span.white {
+  color: #fff;
+}
+
+.perfect_dts p {
+  font-size: 24px;
+  color: #3F3F3F;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.perfect_dts.borderLeft {
+  position: relative;
+  padding-left: 20px;
+}
+
+.perfect_dts.borderLeft:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #707070;
+  height: 100%;
+  width: 6px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.perfect_dts.borderLeft h3:before {
+  content: "";
+  position: absolute;
+  background-color: #ffc812;
+  top: 0;
+  height: 48px;
+  width: 100%;
+  z-index: 0;
+}
+
+.perfect_user {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.perfect_user_dts {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.perfect_user_dts .user-img {
+  width: 285px;
+  height: 285px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.perfect_user_dts .user-name h3 {
+  font-size: 31px;
+  color: #00A8CE;
+  font-weight: bold;
+}
+
+.perfect_user_dts .user-name p {
+  font-size: 16px;
+  color: #3F3F3F;
+}
+
+.perfect_user_content {
+  padding: 25px;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  padding-left: 300px;
+  z-index: 0;
+  border-radius: 70px;
+  -webkit-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -o-border-radius: 70px;
+  margin-bottom: 61px;
+}
+
+.perfect_user_content p {
+  font-size: 24px;
+  color: #3F3F3F;
+}
+
+.perfect .inline-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.perfect .inline-set h3 {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #3F3F3F;
+}
+
+.perfect .inline-set a {
+  color: #3F3F3F;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=style.min.css.map */

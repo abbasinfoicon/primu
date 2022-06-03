@@ -2,39 +2,130 @@
 .perfect {
     &_dts {
         h3 {
+            font-size: 50px;
+            color: $text_color;
+            font-weight: bold;
+            position: relative;
+
+            span {
+                position: relative;
+
+                &.white {
+                    color: $white;
+                }
+            }
         }
+
         p {
+            font-size: 24px;
+            color: $text_color;
+
+            display: -webkit-box;
+            -webkit-line-clamp: 6;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        &.borderLeft {
+            position: relative;
+            padding-left: 20px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                background-color: #707070;
+                height: 100%;
+                width: 6px;
+                @include border-radius(8px);
+            }
+
+            h3 {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    background-color: #ffc812;
+                    top: 0;
+                    height: 48px;
+                    width: 100%;
+                    z-index: 0;
+                }
+            }
         }
     }
 
     &_user {
+        position: relative;
+        display: flex;
+        align-items: center;
+
         &_dts {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+
             .user {
                 &-img {
+                    width: 285px;
+                    height: 285px;
+                    overflow: hidden;
+                    border-radius: 100%;
+
                     img {
                     }
                 }
 
                 &-name {
                     h3 {
+                        font-size: 31px;
+                        color: $main;
+                        font-weight: bold;
                     }
+
                     p {
+                        font-size: 16px;
+                        color: $text_color;
                     }
                 }
             }
         }
 
         &_content {
+            padding: 25px;
+            background: $white;
+            width: 100%;
+            position: absolute;
+            padding-left: 300px;
+            z-index: 0;
+            @include border-radius(70px);
+            margin-bottom: 61px;
+
             p {
+                font-size: 24px;
+                color: $text_color;
             }
         }
     }
 
     .inline-set {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
         h3 {
+            font-size: 22px;
+            @include roboto(regular400);
+            color: $text_color;
         }
+
         a {
+            color: $text_color;
         }
     }
+}
+
+// mb-100
+.mb-100 {
+    margin-bottom: 100px;
 }
 // perfect end
