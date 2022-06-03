@@ -3923,15 +3923,21 @@ input:visited {
   -o-border-radius: 35px;
 }
 
-#profileModal .modal-body-content .left-st-content h3 {
+#profileModal .modal-body-content .left-st-content h2 {
   font-size: 45px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #00A8CE;
 }
 
-#profileModal .modal-body-content .left-st-content h3 img {
+#profileModal .modal-body-content .left-st-content h2 img {
   margin-bottom: 21px;
+}
+
+#profileModal .modal-body-content .left-st-content h3 {
+  font-size: 35px;
+  color: #00A8CE;
+  font-family: "Bebas Neue", cursive;
 }
 
 #profileModal .modal-body-content .left-st-content h4 {
@@ -3947,6 +3953,54 @@ input:visited {
   margin-bottom: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+}
+
+#profileModal .modal-body-content .left-st-content .btn-create {
+  font-size: 12px;
+  color: #fff;
+  background-color: #00A8CE;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  text-transform: uppercase;
+  padding: 6px 30px;
+  display: inline-block;
+  border: 1px solid #00A8CE;
+  margin: 30px auto;
+}
+
+#profileModal .modal-body-content .left-st-content .btn-create:hover {
+  background-color: #fff;
+  color: #00A8CE;
+}
+
+#profileModal .modal-body-content .left-st-content .data_sub table tr th {
+  font-size: 15px;
+  background-color: #F1623F;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#profileModal .modal-body-content .left-st-content .data_sub table tr td {
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+}
+
+#profileModal .modal-body-content .left-st-content .data_sub table tr td:first-child input {
+  width: 150px;
+}
+
+#profileModal .modal-body-content .left-st-content .data_sub table tr td input {
+  width: 90px;
+  border: 2px solid #3F3F3F;
+}
+
+#profileModal .modal-body-content .left-st-content .data_sub table tr td .custom-radio {
+  margin-bottom: 0;
 }
 
 #profileModal .modal-body-content .right-st {
@@ -4147,6 +4201,10 @@ input:visited {
   display: block;
   text-decoration: underline;
   padding-right: 18px;
+}
+
+.table > :not(:first-child) {
+  border: none;
 }
 
 .header {

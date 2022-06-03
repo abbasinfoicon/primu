@@ -58,7 +58,7 @@
                         }
 
                         &-content {
-                            h3 {
+                            h2 {
                                 font-size: 45px;
                                 @include poppins(regular400);
                                 color: $main;
@@ -66,6 +66,12 @@
                                 img {
                                     margin-bottom: 21px;
                                 }
+                            }
+
+                            h3 {
+                                font-size: 35px;
+                                color: $main;
+                                @include Bebas(regular400);
                             }
 
                             h4 {
@@ -79,6 +85,58 @@
                                 color: transparentize($text_color, 0.39);
                                 margin-bottom: 30px;
                                 @include poppins(semibold600);
+                            }
+
+                            .btn-create {
+                                font-size: 12px;
+                                color: $white;
+                                background-color: $main;
+                                @include border-radius(25px);
+                                text-transform: uppercase;
+                                padding: 6px 30px;
+                                display: inline-block;
+                                border: 1px solid $main;
+                                margin: 30px auto;
+
+                                &:hover {
+                                    background-color: $white;
+                                    color: $main;
+                                }
+                            }
+
+                            .data_sub {
+                                table {
+                                    tr {
+                                        th {
+                                            font-size: 15px;
+                                            background-color: $third;
+                                            color: $white;
+                                            text-transform: uppercase;
+                                            font-weight: 400;
+                                        }
+
+                                        td {
+                                            padding-left: 0;
+                                            padding-right: 0;
+                                            border: none;
+
+                                            &:first-child {
+                                                input {
+                                                    width: 150px;
+                                                }
+                                            }
+
+                                            input {
+                                                width: 90px;
+                                                border: 2px solid $text_color;
+                                            }
+
+                                            .custom-radio {
+                                                margin-bottom: 0;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -281,4 +339,8 @@
             }
         }
     }
+}
+
+.table > :not(:first-child) {
+    border: none;
 }
