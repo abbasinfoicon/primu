@@ -1,0 +1,40 @@
+// perfect start
+.perfect {
+    &_dts {
+        h3 {
+        }
+        p {
+        }
+    }
+
+    &_user {
+        &_dts {
+            .user {
+                &-img {
+                    img {
+                    }
+                }
+
+                &-name {
+                    h3 {
+                    }
+                    p {
+                    }
+                }
+            }
+        }
+
+        &_content {
+            p {
+            }
+        }
+    }
+
+    .inline-set {
+        h3 {
+        }
+        a {
+        }
+    }
+}
+// perfect end

@@ -14,6 +14,10 @@
 
         &-nav {
             font-size: 0;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            justify-content: flex-end;
 
             li {
                 display: inline-block;
@@ -49,10 +53,44 @@
 
                 &.active {
                     a {
-                        color:  $main;
-                        
+                        color: $main;
+
                         &:after {
                             width: 100%;
+                        }
+                    }
+                }
+
+                &.marketplace-link {
+                    a {
+                        font-size: 24px;
+                        color: $main;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+
+                        &:hover {
+                            color: $text_color;
+                        }
+                    }
+                }
+
+                &.login-btn {
+                    a {
+                        font-size: 20px;
+                        color: $main;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        background-color: $second;
+                        @include border-radius(29px);
+                        padding: 15px 40px;
+
+                        &:hover {
+                            background-color: $main;
+                            color: $white;
                         }
                     }
                 }

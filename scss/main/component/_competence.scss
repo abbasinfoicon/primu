@@ -1,0 +1,19 @@
+// competence start
+.competence {
+    &_content {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            left: -23.5px;
+            top: 0;
+            bottom: 0;
+            background: #ffc812;
+            width: 6px;
+            border-radius: 10px;
+        }
+    }
+}
+// competence end

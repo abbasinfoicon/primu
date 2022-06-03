@@ -40,8 +40,8 @@
 ---------------------------- Header-SECTION-start --------------------------------------------
 ===================================================================================================-->
 
-    <header class="header navbar_custom">
-        <div class="container">
+    <header class="header navbar_custom bg_white">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-md navbar-custom">
@@ -59,9 +59,13 @@
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
+                                <li class="marketplace-link"><a href="marketplace.html">Marketplace</a></li>
+
                                 <li class="nav-item active"><a class="" href="index.html">Start</a></li>
-                                <li class="nav-item"><a class="" href="#">Unterricht</a></li>
+                                <li class="nav-item"><a class="" href="unterricht.html">Unterricht</a></li>
                                 <li class="nav-item"><a class="" href="register.html">Registrieren</a></li>
+
+                                <li class="nav-item login-btn"><a class="" href="login.html">Login</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -72,55 +76,145 @@
 
 
     <!--=============================================================================================
----------------------------- Login-Section-start --------------------------------------------
+---------------------------- slider-section-start --------------------------------------------
 ===================================================================================================-->
 
-    <section class="main mt-100">
-        <!-- animation_clouds -->
-        <div class="animation_clouds">
-            <img src="assets/img/clouds.png" alt="clouds" class="img-fluid">
-        </div><!-- /animation_clouds -->
-
-
+    <section class="slider p-60 mh100vh">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-9">
-                    <!-- login -->
-                    <div class="login boxShadow">
-                        <div class="login-sec">
-                            <div class="login-sec-title">
-                                <h2>Willkommen zurück!</h2>
-                                <p>Bitte logge dich in deinen Account ein.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+
+                    <div class="slider_content main_content">
+                        <h3>Online Nachhilfe <br>
+                            von zertifizierten Lehrern</h3>
+
+                        <p>Nehme jetzt Einzelunterricht von registrierten Lehrern und
+                            schliesse dein Fach erfolgreich ab!</p>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="slider_img">
+                        <img src="assets/img/teacher-explains-the-infographic.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--=============================================================================================
+---------------------------- competence-start --------------------------------------------
+===================================================================================================-->
+
+    <section class="competence bg_white p-60 mh100vh">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+
+                    <!-- competence_content -->
+                    <div class="competence_content main_content">
+                        <h3>Zertifizierte Lehrer mit Kompetenz & KNOW-HOW</h3>
+
+                        <p>Alle unsere „Teacher“ werden mit Sorgfalt ausgewählt und durchlaufen ein Aufnahmeprogramm.
+                            Qualitative Nachhilfe ist Primu wichtig, deswegen wird geprüft ob unsere „Teacher“ die
+                            nötigen Fachkenntnisse beherrschen und unseren „Students“ diese erfolgreich zu Unterrichten
+                        </p>
+                    </div><!-- /competence_content -->
+
+                </div>
+
+                <div class="col-md-7">
+                    <div class="competence_img">
+                        <img src="assets/img/people reading-07.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--=============================================================================================
+---------------------------- competence-start --------------------------------------------
+===================================================================================================-->
+
+    <section class="perfect bg_white p-60 mh100vh bg_img">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+
+                    <!-- perfect_user -->
+                    <div class="perfect_user">
+                        <div class="perfect_user_dts">
+                            <div class="user-img">
+                                <img src="assets/img/user-img.png" alt="" class="img-fluid">
                             </div>
 
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                                <label for="email">Email</label>
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="password" placeholder="Password">
-                                <label for="password">Password</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                    Remember me
-                                </label>
-
-                                <div class="forget-password">
-                                    <a href="#">Passwort vergessen</a>
-                                </div>
-                            </div>
-
-                            <div class="form-group login-sec-btn">
-                                <button type="button" class="btn-custom btn-login">Login</button>
-                                <button type="button" class="btn-custom btn-register">Registrieren</button>
+                            <div class="user-name">
+                                <h3>Max Mustermann</h3>
+                                <p>WIRTSCHAFTSDOZENT</p>
                             </div>
                         </div>
 
-                    </div><!-- /login -->
+                        <div class="perfect_user_content">
+                            <p>Als zertifizierter Experte für Wirtschaftsrecht, helfe ich Ihnen das Studium erfolgreich
+                                zu meistern.</p>
+                        </div>
+                    </div><!-- /perfect_user -->
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <!-- perfect_dts -->
+                    <div class="perfect_dts">
+                        <h3>Der perfekte Match für deine Nachhilfe</h3>
+                        <P>Mit Hilfe einer Analyse für deine Bedürfnisse, finden wir den perfekten Lehrer für dein
+                            Problemgebiet und helfen Ihnen dabei, perfekte Ergebnisse zu erarbeiten.</P>
+                    </div><!-- /perfect_dts -->
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <!-- perfect_dts -->
+                    <div class="perfect_dts text-right">
+                        <h3>Der eigene Nachhilfe Kalendar</h3>
+                        <P>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                            voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</P>
+                    </div><!-- /perfect_dts -->
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="row">
+                        <div class="col-md-8">
+
+                            <!-- calendar -->
+                            <div class="calendar boxShadow">
+                                <div class="calendar-wrapper">
+                                    <div class="inline-set">
+                                        <h3>Calendar</h3>
+                                        <a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div id="divCal"></div>
+                                </div>
+                            </div><!-- /calendar -->
+
+                        </div>
+                    </div>
 
                 </div>
             </div>

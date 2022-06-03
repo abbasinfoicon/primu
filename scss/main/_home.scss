@@ -140,4 +140,44 @@ input[type="number"] {
         color: $main;
     }
 }
+
+// p-60
+.p-60 {
+    padding: 60px 0;
+}
+
+// mh100vh
+.mh100vh {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// main_content
+.main_content {
+    h3 {
+        font-size: 70px;
+        color: $main;
+        line-height: 85px;
+        text-align: left;
+        @include Bebas(regular400);
+    }
+
+    p {
+        font-size: 24px;
+        color: $text_color;
+        line-height: 32px;
+        text-align: left;
+    }
+}
+
+// bg_img
+.bg_img {
+    background-image: url(../img/path-bg.png);
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
 // header end
