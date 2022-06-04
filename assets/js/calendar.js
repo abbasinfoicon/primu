@@ -144,13 +144,15 @@ if ($('#divCal').length > 0) {
     var c = new Cal("divCal");
     c.showcurr();
 
-    // Bind next and previous button clicks
-    getId('btnNext').onclick = function () {
-      c.nextMonth();
-    };
-    getId('btnPrev').onclick = function () {
-      c.previousMonth();
-    };
+    if ($('#btnNext').length > 0) {
+      // Bind next and previous button clicks
+      getId('btnNext').onclick = function () {
+        c.nextMonth();
+      };
+      getId('btnPrev').onclick = function () {
+        c.previousMonth();
+      };
+    }
   }
 
   // Get element by id

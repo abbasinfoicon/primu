@@ -7,6 +7,10 @@
             font-weight: bold;
             position: relative;
 
+            @include mq(max, $desktop_md) {
+                font-size: 42px;
+            }
+
             span {
                 position: relative;
 
@@ -24,6 +28,10 @@
             -webkit-line-clamp: 6;
             -webkit-box-orient: vertical;
             overflow: hidden;
+
+            @include mq(max, $desktop_md) {
+                font-size: 18px;
+            }
         }
 
         &.borderLeft {
@@ -80,11 +88,19 @@
                         font-size: 31px;
                         color: $main;
                         font-weight: bold;
+
+                        @include mq(max, $desktop_md) {
+                            font-size: 25px;
+                        }
                     }
 
                     p {
                         font-size: 16px;
                         color: $text_color;
+
+                        @include mq(max, $desktop_md) {
+                            font-size: 15px;
+                        }
                     }
                 }
             }
@@ -103,6 +119,10 @@
             p {
                 font-size: 24px;
                 color: $text_color;
+
+                @include mq(max, $desktop_md) {
+                    font-size: 18px;
+                }
             }
         }
     }

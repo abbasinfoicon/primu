@@ -123,7 +123,11 @@ input[type="number"] {
     margin-top: 100px;
 
     @include mq(max, $laptop) {
-        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    @include mq(max, $tab) {
+        margin-top: 30px;
     }
 }
 
@@ -163,6 +167,10 @@ input[type="number"] {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mq(max, $laptop_xl) {
+        min-height: auto;
+    }
 }
 
 // main_content
@@ -172,12 +180,72 @@ input[type="number"] {
         color: $main;
         line-height: 85px;
         @include Bebas(regular400);
+
+        @include mq(max, $laptop) {
+            font-size: 62px;
+            line-height: 1;
+            margin-bottom: 10px;
+
+            br {
+                display: none;
+            }
+        }
+
+        @include mq(max, $desktop_md) {
+            font-size: 48px;
+        }
     }
 
     p {
         font-size: 24px;
         color: $text_color;
         line-height: 32px;
+
+        @include mq(max, $laptop) {
+            font-size: 22px;
+
+            br {
+                display: none;
+            }
+        }
+
+        @include mq(max, $desktop_md) {
+            font-size: 18px;
+        }
+    }
+}
+
+// row_custom
+.row {
+    &_custom {
+        @include mq(max, $laptop) {
+            flex-direction: column;
+
+            .col-md-6,
+            .col-lg-9,
+            .col-lg-7 {
+                width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+
+        &_sec {
+            .col-md-6 {
+                width: 100%;
+                margin-bottom: 50px;
+
+                .text-end.perfect_dts {
+                    text-align: left !important;
+                }
+            }
+        }
+    }
+
+    @include mq(max, $laptop_md) {
+        .custom-md-5,
+        .custom-md-7 {
+            width: 100%;
+        }
     }
 }
 

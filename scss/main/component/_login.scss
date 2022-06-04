@@ -7,8 +7,12 @@
     z-index: 9;
     margin-bottom: 50px;
 
-    @include mq(max, $tab) {
+    @include mq(max, $laptop) {
         padding: 50px 30px;
+        @include border-radius(80px);
+    }
+
+    @include mq(max, $tab) {
         @include border-radius(50px);
     }
 
@@ -23,6 +27,9 @@
             text-align: center;
             @include Bebas(regular400);
 
+            @include mq(max, $laptop) {
+                font-size: 64px;
+            }
             @include mq(max, $tab) {
                 font-size: 45px;
             }
@@ -35,6 +42,10 @@
 
             @include mq(max, $tab) {
                 font-size: 15px;
+
+                br {
+                    display: none;
+                }
             }
         }
 
@@ -91,14 +102,13 @@
             }
         }
 
-        
-
         &-btn {
             display: flex;
             justify-content: center;
             align-items: center;
 
-            button, a {
+            button,
+            a {
                 font-size: 20px;
                 border: 1px solid $main;
                 padding: 10px 15px;

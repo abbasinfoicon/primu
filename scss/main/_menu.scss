@@ -31,6 +31,11 @@
                     padding: 0;
                     @include transition(0.5s);
 
+                    @include mq(max, $laptop_xl) {
+                        margin: 0 20px;
+                        font-size: 20px;
+                    }
+
                     &:after {
                         content: "";
                         position: absolute;
@@ -71,6 +76,15 @@
                         left: 0;
                         top: 50%;
                         transform: translateY(-50%);
+
+                        @include mq(max, $laptop) {
+                            position: static;
+                            transform: inherit;
+                        }
+
+                        @include mq(max, $laptop_xl) {
+                            font-size: 20px;
+                        }
 
                         &:hover {
                             color: $text_color;
