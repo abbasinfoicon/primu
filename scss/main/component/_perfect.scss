@@ -1,6 +1,10 @@
 // perfect start
 .perfect {
     &_dts {
+        @include mq(max, $mobile) {
+            text-align: left !important;
+        }
+
         h3 {
             font-size: 50px;
             color: $text_color;
@@ -9,6 +13,18 @@
 
             @include mq(max, $desktop_md) {
                 font-size: 42px;
+            }
+
+            @include mq(max, $laptop_md) {
+                font-size: 32px;
+            }
+
+            @include mq(max, $tab) {
+                font-size: 28px;
+            }
+
+            @include mq(max, $mobile) {
+                font-size: 24px;
             }
 
             span {
@@ -31,6 +47,10 @@
 
             @include mq(max, $desktop_md) {
                 font-size: 18px;
+            }
+
+            @include mq(max, $mobile) {
+                font-size: 15px;
             }
         }
 
@@ -57,6 +77,10 @@
                     height: 48px;
                     width: 100%;
                     z-index: 0;
+
+                    @include mq(max, $mobile) {
+                        height: 22px;
+                    }
                 }
             }
         }
@@ -66,6 +90,11 @@
         position: relative;
         display: flex;
         align-items: center;
+
+        @include mq(max, $mobile) {
+            display: block;
+            text-align: center;
+        }
 
         &_dts {
             text-align: center;
@@ -79,6 +108,10 @@
                     overflow: hidden;
                     border-radius: 100%;
 
+                    @include mq(max, $mobile) {
+                        margin: 0 auto 10px;
+                    }
+
                     img {
                     }
                 }
@@ -91,6 +124,10 @@
 
                         @include mq(max, $desktop_md) {
                             font-size: 25px;
+                        }
+
+                        @include mq(max, $mobile) {
+                            font-size: 22px;
                         }
                     }
 
@@ -116,12 +153,22 @@
             @include border-radius(70px);
             margin-bottom: 61px;
 
+            @include mq(max, $mobile) {
+                position: static;
+                padding-left: 25px;
+                margin-bottom: 30px;
+            }
+
             p {
                 font-size: 24px;
                 color: $text_color;
 
                 @include mq(max, $desktop_md) {
                     font-size: 18px;
+                }
+
+                @include mq(max, $mobile) {
+                    font-size: 15px;
                 }
             }
         }

@@ -6,6 +6,19 @@
         }
 
         &-toggler {
+            outline: none;
+            @include box-shadow(none);
+
+            &:focus,
+            &:active,
+            &:hover {
+                outline: none;
+                @include box-shadow(none);
+            }
+
+            i {
+                color: $main;
+            }
         }
 
         &-collapse {
@@ -19,8 +32,20 @@
             position: relative;
             justify-content: flex-end;
 
+            @include mq(max, $tab) {
+                position: absolute;
+                background: $white;
+                padding: 15px;
+            }
+
             li {
                 display: inline-block;
+
+                @include mq(max, $tab) {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
 
                 a {
                     position: relative;
@@ -36,6 +61,14 @@
                         font-size: 20px;
                     }
 
+                    @include mq(max, $tab) {
+                        font-size: 18px;
+                        margin: 0 auto 10px;
+                        border-bottom: 1px solid $main;
+                        display: block;
+                        padding-bottom: 10px;
+                    }
+
                     &:after {
                         content: "";
                         position: absolute;
@@ -45,6 +78,10 @@
                         width: 0;
                         left: 0;
                         @include transition(1s);
+
+                        @include mq(max, $tab) {
+                            content: none;
+                        }
                     }
 
                     &:hover {
@@ -86,6 +123,10 @@
                             font-size: 20px;
                         }
 
+                        @include mq(max, $tab) {
+                            font-size: 18px;
+                        }
+
                         &:hover {
                             color: $text_color;
                         }
@@ -101,6 +142,11 @@
                         background-color: $second;
                         @include border-radius(29px);
                         padding: 15px 40px;
+
+                        @include mq(max, $tab) {
+                            font-size: 18px;
+                            border-bottom: none;
+                        }
 
                         &:hover {
                             background-color: $main;

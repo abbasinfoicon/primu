@@ -83,7 +83,8 @@
     margin-bottom: 80px;
     overflow: hidden;
 
-    @include mq(max, $laptop) {
+    @include mq(max, $laptop_xl) {
+      width: auto;
     }
 
     .img-style {

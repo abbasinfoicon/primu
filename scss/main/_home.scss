@@ -129,6 +129,7 @@ input[type="number"] {
     @include mq(max, $tab) {
         margin-top: 30px;
     }
+    
 }
 
 // btn-custom
@@ -175,6 +176,10 @@ input[type="number"] {
 
 // main_content
 .main_content {
+    @include mq(max, $mobile) {
+        margin-bottom: 15px;
+    }
+
     h3 {
         font-size: 70px;
         color: $main;
@@ -194,6 +199,10 @@ input[type="number"] {
         @include mq(max, $desktop_md) {
             font-size: 48px;
         }
+
+        @include mq(max, $desktop_md) {
+            font-size: 32px;
+        }
     }
 
     p {
@@ -211,6 +220,11 @@ input[type="number"] {
 
         @include mq(max, $desktop_md) {
             font-size: 18px;
+        }
+
+        @include mq(max, $desktop_md) {
+            font-size: 15px;
+            line-height: 1.4;
         }
     }
 }

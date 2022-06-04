@@ -10,6 +10,10 @@
     justify-content: space-between;
     margin-bottom: 30px;
 
+    @include mq(max, $tab) {
+        display: block;
+    }
+
     input {
         @include border-radius(12px);
         height: 43.46px;
@@ -22,11 +26,19 @@
     &_001 {
         position: relative;
 
+        @include mq(max, $tab) {
+            margin-bottom: 15px;
+        }
+
         input {
             min-width: 366px;
 
             @include mq(max, $laptop) {
                 min-width: auto;
+            }
+
+            @include mq(max, $tab) {
+                min-width: 100%;
             }
         }
 
@@ -53,6 +65,10 @@
     &_002 {
         position: relative;
 
+        @include mq(max, $tab) {
+            margin-bottom: 15px;
+        }
+
         span {
             position: absolute;
             top: 50%;
@@ -70,6 +86,10 @@
             @include mq(max, $laptop) {
                 min-width: auto;
             }
+
+            @include mq(max, $tab) {
+                min-width: 100%;
+            }
         }
     }
 
@@ -80,6 +100,12 @@
         height: 23px;
         position: relative;
         width: 263px;
+
+        @include mq(max, $tab) {
+            margin-bottom: 30px;
+            margin-top: 30px;
+            width: 100%;
+        }
 
         span.span-chf {
             position: absolute;
