@@ -3889,6 +3889,14 @@ input:visited {
   background-color: #fff;
 }
 
+.bg_white-img {
+  background-color: #fff;
+  background-image: url("../img/bg_backgrond2.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #profileModal {
   right: -100%;
   left: auto;
@@ -4920,7 +4928,6 @@ input[type="number"] {
   font-size: 70px;
   color: #00A8CE;
   line-height: 85px;
-  text-align: left;
   font-family: "Bebas Neue", cursive;
 }
 
@@ -4928,7 +4935,6 @@ input[type="number"] {
   font-size: 24px;
   color: #3F3F3F;
   line-height: 32px;
-  text-align: left;
 }
 
 .bg_img {
@@ -5238,6 +5244,22 @@ input[type="number"] {
   position: absolute;
   height: 100%;
   left: -23.5px;
+  top: 0;
+  bottom: 0;
+  background: #ffc812;
+  width: 6px;
+  border-radius: 10px;
+}
+
+.competence_content_right {
+  position: relative;
+}
+
+.competence_content_right:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  right: -23.5px;
   top: 0;
   bottom: 0;
   background: #ffc812;
