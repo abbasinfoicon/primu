@@ -4848,6 +4848,10 @@ input[type="number"] {
   margin-bottom: 30px;
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
 .mt-100 {
   margin-top: 100px;
 }
@@ -5039,7 +5043,7 @@ input[type="number"] {
           align-items: center;
 }
 
-.login-sec-btn button {
+.login-sec-btn button, .login-sec-btn a {
   font-size: 20px;
   border: 1px solid #00A8CE;
   padding: 10px 15px;
@@ -5067,22 +5071,22 @@ input[type="number"] {
   -o-transition: 0.5s;
 }
 
-.login-sec-btn button.btn-login {
+.login-sec-btn button.btn-login, .login-sec-btn a.btn-login {
   background: #00A8CE;
   color: #fff;
 }
 
-.login-sec-btn button.btn-login:hover {
+.login-sec-btn button.btn-login:hover, .login-sec-btn a.btn-login:hover {
   background: #fff;
   color: #00A8CE;
 }
 
-.login-sec-btn button.btn-register {
+.login-sec-btn button.btn-register, .login-sec-btn a.btn-register {
   background: #fff;
   color: #00A8CE;
 }
 
-.login-sec-btn button.btn-register:hover {
+.login-sec-btn button.btn-register:hover, .login-sec-btn a.btn-register:hover {
   background: #00A8CE;
   color: #fff;
 }
