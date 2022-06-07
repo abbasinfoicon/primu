@@ -300,7 +300,17 @@ input[type="number"] {
 .lottie-404 {
     width: auto;
     height: 271px;
-    margin: 15px auto 0; 
+    margin: 15px auto 0;
+}
+
+.vertical {
+    min-height: calc(100vh - 124px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_middle {
+    }
 }
 
 // header end
