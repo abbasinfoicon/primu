@@ -5198,6 +5198,12 @@ input[type="number"] {
   top: 0;
 }
 
+.lottie-404 {
+  width: auto;
+  height: 256px;
+  margin: 15px auto 0;
+}
+
 .login {
   position: relative;
   background-color: #fff;
