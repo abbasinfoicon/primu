@@ -261,37 +261,36 @@
 
     img {
         @include transform(scale(1));
-        @include css3(animation, animateCloud 35s linear infinite);
+        @include css3(animation, animateCloud 55s 0s linear infinite both);
     }
 }
 
 /* KEYFRAMES */
 
 @-webkit-keyframes animateCloud {
-    0% {
-        margin-left: -100px;
+    from {
+    	transform: translateX(-100%);
     }
-    100% {
-        margin-left: 100%;
+    to {
+ 		transform: translateX(100%);   
     }
 }
 
 @-moz-keyframes animateCloud {
-    0% {
-        margin-left: -100px;
+    from {
+    	transform: translateX(-100%);
     }
-    100% {
-        margin-left: 100%;
+    to {
+ 		transform: translateX(100%);   
     }
 }
 
 @keyframes animateCloud {
-    0% {
-        margin-left: -100px;
+    from {
+    	transform: translateX(-100%);
     }
-
-    100% {
-        margin-left: 100%;
+    to {
+ 		transform: translateX(100%);   
     }
 }
 
