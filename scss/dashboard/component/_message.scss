@@ -169,11 +169,15 @@
             @include border-radius(12px);
             background-color: $second;
             padding: 12px 12px;
-            font-size: 11px;
-            color: $text_color;
+            font-size: 14px;
+            color: $black;
             border: none;
             width: 100%;
             padding-right: 40px;
+
+            &::placeholder{
+                color: $text_color;
+            }
 
             &:active,
             &:focus {

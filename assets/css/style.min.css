@@ -269,6 +269,7 @@ input:visited {
   width: 100%;
   padding-left: 38px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 @media (max-width: 991px) {
@@ -276,6 +277,10 @@ input:visited {
     padding-left: 0;
     text-align: center;
   }
+}
+
+.aside .name-sec a .nnn {
+  display: block;
 }
 
 .aside .name-sec a img {
@@ -1379,11 +1384,27 @@ input:visited {
   -o-border-radius: 12px;
   background-color: #eaf0f2;
   padding: 12px 12px;
-  font-size: 11px;
-  color: #3f3f3f;
+  font-size: 14px;
+  color: #000;
   border: none;
   width: 100%;
   padding-right: 40px;
+}
+
+.message-footer .send-input::-webkit-input-placeholder {
+  color: #3f3f3f;
+}
+
+.message-footer .send-input:-ms-input-placeholder {
+  color: #3f3f3f;
+}
+
+.message-footer .send-input::-ms-input-placeholder {
+  color: #3f3f3f;
+}
+
+.message-footer .send-input::placeholder {
+  color: #3f3f3f;
 }
 
 .message-footer .send-input:active, .message-footer .send-input:focus {
