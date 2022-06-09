@@ -267,7 +267,7 @@ input:visited {
   font-size: 36px;
   color: #fff;
   width: 100%;
-  padding-left: 38px;
+  padding-left: 45px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -1434,6 +1434,15 @@ input:visited {
   height: 1px;
   width: 100%;
   background-color: rgba(32, 32, 32, 0.2);
+}
+
+.fficon i {
+  color: #fff;
+  margin-right: 5px;
+}
+
+.fficon.active i {
+  color: #f1623f;
 }
 
 .select-hidden {

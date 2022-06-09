@@ -175,7 +175,7 @@
             width: 100%;
             padding-right: 40px;
 
-            &::placeholder{
+            &::placeholder {
                 color: $text_color;
             }
 
@@ -209,5 +209,18 @@
     height: 1px;
     width: 100%;
     background-color: transparentize(#202020, 0.8);
+}
+
+.fficon {
+    i {
+        color: $white;
+        margin-right: 5px;
+    }
+
+    &.active {
+        i {
+            color: $third;
+        }
+    }
 }
 // message end

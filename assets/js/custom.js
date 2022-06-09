@@ -202,6 +202,15 @@
             // notification_id
         }
 
+        if ($('.fficon').length > 0) {
+
+            // notification_id
+            $('.fficon').click(function () {
+                $(this).toggleClass('active');
+            });
+            // notification_id
+        }
+
         if ($('#phone').length > 0) {
             // countery-list start
             var telInput = $("#phone"),
