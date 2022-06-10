@@ -1442,7 +1442,7 @@ input:visited {
 }
 
 .fficon.active i {
-  color: #f1623f;
+  color: yellow;
 }
 
 .select-hidden {
