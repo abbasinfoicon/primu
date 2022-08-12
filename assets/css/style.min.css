@@ -3890,7 +3890,8 @@ input:visited {
 }
 @media (max-width: 768px) {
   .header_notification ul li {
-    margin: 0 15px;
+    margin: 0;
+    margin-right: 15px;
   }
 }
 .header_notification ul li a {

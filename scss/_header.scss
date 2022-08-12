@@ -107,7 +107,8 @@
                 margin: 0 23px;
 
                 @include mq(max, 768px) {
-                    margin: 0 15px;
+                    margin: 0;
+                    margin-right: 15px;
                 }
 
                 a {
