@@ -7,6 +7,10 @@
     margin-bottom: 30px;
   }
 
+  @include mq(max, $mobile) {
+    padding: 30px 15px;
+  }
+
   &-wrapper {
     position: relative;
 
@@ -35,6 +39,11 @@
         text-transform: uppercase;
         color: #262d33;
         padding: 19.5px 10px;
+
+        @include mq(max, $mobile) {
+          padding: 3px;
+          font-size: 13px;
+        }
       }
 
       thead {

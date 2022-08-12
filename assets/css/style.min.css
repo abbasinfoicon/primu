@@ -348,6 +348,11 @@ input:visited {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 767px) {
+  .calendar {
+    padding: 30px 15px;
+  }
+}
 .calendar-wrapper {
   position: relative;
 }
@@ -372,6 +377,12 @@ input:visited {
   text-transform: uppercase;
   color: #262d33;
   padding: 19.5px 10px;
+}
+@media (max-width: 767px) {
+  .calendar #divCal table td {
+    padding: 3px;
+    font-size: 13px;
+  }
 }
 .calendar #divCal table thead tr td {
   text-align: center;
