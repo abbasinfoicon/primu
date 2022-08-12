@@ -7,11 +7,19 @@
         margin-bottom: 30px;
     }
 
+    @include mq(max, $iphon) {
+        padding: 15px;
+    }
+
     &-content {
         h3 {
             font-size: 22px;
             color: $black;
             margin-bottom: 20px;
+
+            @include mq(max, $mobile){
+                font-size: 18px;
+            }
         }
 
         table {

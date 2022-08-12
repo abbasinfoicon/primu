@@ -19,6 +19,14 @@
     padding: 40px 30px;
     min-height: calc(100vh - 124px);
 
+    @include mq(max, 768px) {
+        padding: 30px 15px;
+    }
+
+    @include mq(max, $iphon) {
+        padding: 30px 0;
+    }
+
     .custom-md-4 {
         @include mq(max, $desktop_md) {
             width: 50%;
@@ -114,6 +122,10 @@
             background-position: right bottom;
             background-repeat: no-repeat;
             background-size: cover;
+
+            @include mq(max, $mobile){
+                background-image: none;
+            }
         }
     }
 }

@@ -5,6 +5,10 @@
     @include mq(max, $laptop) {
         margin-bottom: 30px;
     }
+
+    @include mq(max, $iphon) {
+        padding: 15px;
+    }
 }
 // transactions end
 

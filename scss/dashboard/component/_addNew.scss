@@ -6,11 +6,19 @@
         margin-bottom: 30px;
     }
 
+    @include mq(max, $iphon) {
+        padding: 15px;
+    }
+
     &-cart {
         @include background-gradient(#679cf6, #4072ee, "vertical");
         @include border-radius(5px);
         padding: 30px;
         margin-bottom: 30px;
+
+        @include mq(max, $iphon) {
+            padding: 15px;
+        }
 
         .logo {
             margin-bottom: 30px;
@@ -28,6 +36,10 @@
                 @include roboto(regular400);
                 color: $white;
                 padding-right: 10px;
+
+                @include mq(max, $iphon) {
+                    font-size: 15px;
+                }
             }
         }
 

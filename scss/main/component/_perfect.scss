@@ -194,5 +194,9 @@
 // mb-100
 .mb-100 {
     margin-bottom: 100px;
+
+    @include mq(max, $mobile){
+        margin-bottom: 30px;
+    }
 }
 // perfect end

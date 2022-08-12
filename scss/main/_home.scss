@@ -16,6 +16,16 @@
             }
         }
     }
+
+    @include mq(max, $mobile) {
+        margin-left: 60px;
+
+        .header {
+            &.sticky {
+                width: calc(100vw - 60px);
+            }
+        }
+    }
 }
 
 // home-page
@@ -42,6 +52,10 @@
         color: $black;
         @include inter(medium500);
         text-transform: capitalize;
+
+        @include mq(max, $mobile) {
+            font-size: 20px;
+        }
     }
 
     p {
@@ -69,6 +83,10 @@
             @include Bebas(regular400);
             text-transform: uppercase;
             letter-spacing: 0.8px;
+
+            @include mq(max, $mobile) {
+                font-size: 30px;
+            }
         }
 
         p {
@@ -80,6 +98,10 @@
         &.fsize70 {
             h2 {
                 font-size: 70px;
+
+                @include mq(max, $mobile) {
+                    font-size: 50px;
+                }
             }
         }
     }
@@ -129,6 +151,10 @@ input[type="number"] {
     @include mq(max, $tab) {
         margin-top: 30px;
     }
+
+    @include mq(max, $mobile) {
+        margin-top: 15px;
+    }
 }
 
 // btn-custom
@@ -150,6 +176,10 @@ input[type="number"] {
     margin-left: auto;
     margin-right: auto;
 
+    @include mq(max, $mobile) {
+        font-size: 18px;
+    }
+
     &:hover {
         background: $white;
         color: $main;
@@ -159,11 +189,27 @@ input[type="number"] {
 // p-60
 .p-60 {
     padding: 60px 0;
+
+    @include mq(max, $mobile) {
+        padding: 15px 0;
+    }
 }
 
 // mh100vh
 .mh100vh {
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq(max, $laptop_xl) {
+        min-height: auto;
+    }
+}
+
+// mh80vh
+.mh80vh {
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -239,6 +285,10 @@ input[type="number"] {
             .col-lg-7 {
                 width: 100%;
                 margin-bottom: 50px;
+
+                @include mq(max, $mobile) {
+                    margin-bottom: 15px;
+                }
             }
         }
 
@@ -246,6 +296,10 @@ input[type="number"] {
             .col-md-6 {
                 width: 100%;
                 margin-bottom: 50px;
+
+                @include mq(max, $mobile) {
+                    margin-bottom: 15px;
+                }
 
                 .text-end.perfect_dts {
                     text-align: left !important;
@@ -295,7 +349,11 @@ input[type="number"] {
     height: 100vh;
     top: 0;
 }
-
+lottie-player {
+    @include mq(max, $mobile) {
+        height: 380px!important;
+    }
+}
 // lottie-404
 .lottie-404 {
     width: auto;
@@ -310,6 +368,34 @@ input[type="number"] {
     justify-content: center;
 
     &_middle {
+    }
+}
+
+.rightSection {
+    @include mq(max, $mobile) {
+        .row {
+            .col-md-6 {
+                &:first-child {
+                    order: 2;
+                }
+
+                .text-end {
+                    text-align: left !important;
+                }
+            }
+        }
+    }
+}
+
+.leftSection {
+    @include mq(max, $mobile) {
+        .row {
+            .col-md-6 {
+                .text-end {
+                    text-align: left !important;
+                }
+            }
+        }
     }
 }
 

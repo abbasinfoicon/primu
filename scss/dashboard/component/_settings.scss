@@ -8,6 +8,10 @@
         margin-bottom: 30px;
     }
 
+    @include mq(max, $iphon) {
+        padding: 15px;
+    }
+
     &-ul {
         min-height: 528px;
         overflow: hidden;

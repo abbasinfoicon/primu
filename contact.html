@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Register Confirm | PRIMU</title>
+    <title>Contact | PRIMU</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="assets/img/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link href="assets/stylesheets/font-awesome.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 
 </head>
 
-<body class="home-page" style="overflow: hidden;">
+<body class="home-page">
     <!-- preloader area start -->
     <div id="pre-loader">
         <div class="pre-loader">
@@ -40,8 +40,8 @@
 ---------------------------- Header-SECTION-start --------------------------------------------
 ===================================================================================================-->
 
-    <header class="header navbar_custom">
-        <div class="container">
+    <header class="header navbar_custom bg_white">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg navbar-custom">
@@ -59,9 +59,13 @@
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li class="nav-item"><a class="" href="index.html">Start</a></li>
+                                <li class="marketplace-link"><a href="marketplace.html">Marketplace</a></li>
+
+                                <li class="nav-item active"><a class="" href="index.html">Start</a></li>
                                 <li class="nav-item"><a class="" href="unterricht.html">Unterricht</a></li>
                                 <li class="nav-item"><a class="" href="register.html">Registrieren</a></li>
+
+                                <li class="nav-item login-btn"><a class="" href="login.html">Login</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -71,28 +75,72 @@
     </header>
 
 
+
+
+
     <!--=============================================================================================
----------------------------- Login-Section-start --------------------------------------------
+---------------------------- competence-start --------------------------------------------
 ===================================================================================================-->
 
-    <section class="main vertical">
-        <!-- animation_clouds -->
-        <div class="animation_clouds">
-            <img src="assets/img/clouds.png" alt="clouds" class="img-fluid">
-        </div><!-- /animation_clouds -->
+    <section class="perfect bg_white p-60 mh100vh bg_img">
+        <div class="container container-custom">
+            <div class="row row_custom align-items-center mb-100">
+                <div class="col-md-5">
 
+                    <!-- perfect_dts -->
+                    <div class="perfect_dts borderLeft">
+                        <h3><span><span class="white">Du hast Fragen?</span><br> Kontaktiere uns jetzt!</span></h3>
+                        <P>Zögere nicht, uns zu kontaktieren. Wir werden dir schnellstmöglich weiterhelfen</P>
+                    </div><!-- /perfect_dts -->
 
-        <div class="container vertical_middle">
-            <div class="row justify-content-center">
-                <div class="col-lg-9 col-md-12">
+                </div>
+
+                <div class="col-md-1"></div>
+
+                <div class="col-md-6">
                     <!-- login -->
                     <div class="login boxShadow">
                         <div class="login-sec">
                             <div class="login-sec-title">
-                                <h2>GRATULATION!</h2>
-                                <p>Sie haben Ihren Account erfolgreich registriert, es geht 2 - 3 Tage bis Unser Team
-                                    Ihren Account geprüft hat</p>
+                                <h2>KONTAKTformular</h2>
                             </div>
+
+                            <form action="register.html">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="vorname" placeholder="Vorname">
+                                    <label for="vorname">Vorname</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                    <label for="name">Name</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="E-Mail">
+                                    <label for="email">E-Mail</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="tel" placeholder="Tel-Nr.">
+                                    <label for="tel">Tel-Nr.</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="anliegen" placeholder="Anliegen">
+                                    <label for="anliegen">Anliegen</label>
+
+                                    <input type="text" class="form-control" id="">
+                                    <input type="text" class="form-control" id="">
+                                    <input type="text" class="form-control" id="">
+                                    <input type="text" class="form-control" id="">
+                                    <input type="text" class="form-control" id="">
+                                </div>
+
+                                <div class="form-group login-sec-btn">
+                                    <button type="button" class="btn-custom btn-login">Formular Absenden</button>
+                                </div>
+                            </form>
                         </div>
 
                     </div><!-- /login -->
@@ -101,11 +149,6 @@
             </div>
         </div>
     </section>
-
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ojnpwtlm.json" background="transparent" speed="1"
-         loop autoplay class="lottie-player-animation"></lottie-player>
-    
 
 
     <!--=============================================================================================

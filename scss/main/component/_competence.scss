@@ -15,19 +15,45 @@
             border-radius: 10px;
         }
 
-        &_right {
+        &_right,
+        &_left {
             position: relative;
 
             &:before {
                 content: "";
                 position: absolute;
                 height: 100%;
-                right: -23.5px;
                 top: 0;
                 bottom: 0;
                 background: #ffc812;
                 width: 6px;
                 border-radius: 10px;
+            }
+        }
+
+        &_left {
+            padding-left: 23.5px;
+
+            &:before {
+                left: 0;
+            }
+        }
+
+        &_right {
+            padding-right: 23.5px;
+
+            @include mq(max, $mobile) {
+                padding-right: 0;
+                padding-left: 23.5px;
+            }
+
+            &:before {
+                right: 0;
+
+                @include mq(max, $mobile) {
+                    right: auto;
+                    left: 0;
+                }
             }
         }
     }

@@ -2,6 +2,10 @@
 .expenditure {
     padding: 24px;
 
+    @include mq(max, $iphon) {
+        padding: 15px;
+    }
+
     &-growth {
         display: flex;
         align-items: center;
@@ -13,16 +17,28 @@
             color: $main;
             @include poppins(medium500);
 
+            @include mq(max, $mobile){
+                font-size: 24px;
+            }
+
             span {
                 display: block;
                 font-size: 17px;
                 color: #35384d;
+
+                @include mq(max, $mobile){
+                    font-size: 15px;
+                }
             }
         }
         p {
             font-size: 17px;
             color: #9e9ea8;
             @include poppins(medium500);
+
+            @include mq(max, $mobile){
+                font-size: 15px;
+            }
 
             a {
                 color: $white;
@@ -67,6 +83,10 @@
         text-align: center;
         @include border-radius(5px);
         border: 1px solid $main;
+
+        @include mq(max, $mobile){
+            font-size: 16px;
+        }
 
         &:hover {
             background-color: $white;

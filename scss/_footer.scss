@@ -1,4 +1,65 @@
 // footer start
-.footer {}
+.footer {
+    background-color: $main;
+    padding: 15px 0;
+
+    @include mq(min, 1920px) {
+        padding: 47px 0;
+    }
+
+    &_menu {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @include mq(max, $mobile) {
+                display: block;
+                text-align: center;
+            }
+
+            li {
+                a {
+                    font-size: 24px;
+                    color: $white;
+                    text-transform: uppercase;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: $text_color;
+                    }
+
+                    @include mq(max, 1501px) {
+                        font-size: 18px;
+                        font-weight: normal;
+                    }
+
+                    @include mq(max, $mobile) {
+                        font-size: 15px;
+                        display: block;
+                        border-bottom: 1px solid #09b6dd;
+                        padding: 5px 0;
+                    }
+
+                    img {
+                    }
+                }
+
+                &:last-child {
+                    a {
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dsb-page {
+    .footer {
+        background: transparent;
+        padding: 0;
+    }
+}
 
 // footer end

@@ -2,6 +2,10 @@
 .personalien {
     padding: 30px;
 
+    @include mq(max, $iphon) {
+        padding: 15px;
+    }
+
     .form {
         &-floating {
             textarea {
@@ -64,6 +68,10 @@
             background-color: transparent;
             border-bottom: 2px solid #e9e9f0;
 
+            @include mq(max, $mobile){
+                font-size: 15px;
+            }
+
             &:focus,
             &:active {
                 background-color: transparent;
@@ -77,6 +85,10 @@
             border: none;
             background-color: transparent;
             border-bottom: 2px solid #e9e9f0;
+
+            @include mq(max, $mobile){
+                font-size: 15px;
+            }
 
             &:focus,
             &:active {

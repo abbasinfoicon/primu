@@ -8,6 +8,14 @@
     position: relative;
     z-index: 99;
 
+    @include mq(max, 768px) {
+        padding: 0 15px;
+    }
+
+    @include mq(max, $iphon) {
+        padding: 0;
+    }
+
     &.sticky {
         position: fixed;
         width: calc(100vw - 323px);
@@ -39,6 +47,10 @@
                 overflow: hidden;
                 margin-right: 49px;
 
+                @include mq(max, 768px) {
+                    margin-right: 15px;
+                }
+
                 img {
                     width: 100%;
                     height: auto;
@@ -46,20 +58,32 @@
             }
 
             .media-body {
-                h2{
+                h2 {
                     font-size: 40px;
                     color: $main;
                     @include Bebas(regular400);
+
+                    @include mq(max, $mobile) {
+                        font-size: 30px;
+                    }
                 }
 
                 h3 {
                     font-size: 20px;
                     color: $text_color;
+
+                    @include mq(max, $mobile) {
+                        font-size: 16px;
+                    }
                 }
 
                 p {
                     font-size: 17px;
                     color: $text_color;
+
+                    @include mq(max, $mobile) {
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -72,14 +96,28 @@
             justify-content: flex-end;
             position: relative;
 
+            @include mq(max, $mobile) {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+            }
+
             li {
                 margin: 0 23px;
+
+                @include mq(max, 768px) {
+                    margin: 0 15px;
+                }
 
                 a {
                     position: relative;
                     display: block;
 
                     img {
+                        @include mq(max, $mobile){
+                            width: 20px;
+                        }
                     }
 
                     span {
@@ -102,7 +140,7 @@
 .toggle_btn {
     display: none;
     position: absolute;
-    left: 10px;
+    left: 15px;
     top: 50%;
     transform: translateY(-50%);
 
@@ -112,6 +150,10 @@
 
     @include mq(max, $tab) {
         display: block;
+    }
+
+    @include mq(max, $mobile) {
+        display: none;
     }
 }
 

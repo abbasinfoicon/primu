@@ -1,13 +1,33 @@
 // slider start
 .slider {
-
     &_content {
         h3 {
-            
         }
 
         p {
-            
+            margin-bottom: 30px;
+        }
+
+        a {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $white;
+            background: $text_color;
+            padding: 24px 50px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: bold;
+
+            @include mq(max, $mobile){
+                font-size: 15px;
+                padding: 12px 25px;
+            }
+
+
+            &:hover {
+                background-color: $main;
+                
+            }
         }
     }
 }

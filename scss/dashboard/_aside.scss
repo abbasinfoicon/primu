@@ -29,6 +29,24 @@
         }
     }
 
+    @include mq(max, $mobile) {
+        width: 60px;
+        overflow: hidden;
+
+        // name-sec
+        .name-sec {
+            a {
+                span {
+                    display: none;
+                }
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+
     // name-sec
     .name-sec {
         height: 124px;
@@ -48,7 +66,7 @@
                 text-align: center;
             }
 
-            .nnn  {
+            .nnn {
                 display: block;
             }
 

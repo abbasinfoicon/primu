@@ -4,16 +4,24 @@
     padding: 24px;
     border: 1px solid #e0e3ef;
 
+    @include mq(max, $iphon) {
+        padding: 15px;
+    }
+
     .media {
         justify-content: space-between;
 
         &-left {
             position: relative;
-            width: 60px;
+            min-width: 60px;
             height: 60px;
             @include border-radius(100%);
             margin-right: 64px;
             background-color: $white;
+
+            @include mq(max, $iphon) {
+                margin-right: 15px;
+            }
 
             img {
                 height: 100%;
@@ -39,6 +47,10 @@
                 font-size: 21px;
                 color: $black;
                 margin-bottom: 5px;
+
+                @include mq(max, $mobile) {
+                    font-size: 16px;
+                }
             }
 
             p {
@@ -53,6 +65,10 @@
                 text-decoration: underline;
                 line-height: 1;
                 display: block;
+
+                @include mq(max, $mobile) {
+                    font-size: 14px;
+                }
             }
         }
 
@@ -81,6 +97,10 @@
                             display: flex;
                             font-size: 18px;
                             font-weight: 400;
+
+                            @include mq(max, $mobile) {
+                                font-size: 16px;
+                            }
 
                             &.fa-solid {
                                 @include border-radius(100%);
