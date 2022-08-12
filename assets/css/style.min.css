@@ -609,6 +609,12 @@ input:visited {
   -o-border-radius: 100%;
   display: block;
 }
+@media (max-width: 767px) {
+  .lessons-details .lsname .dot span {
+    width: 15px;
+    height: 15px;
+  }
+}
 .lessons-details .lsname .dot.active span {
   background-color: #00a8ce;
 }

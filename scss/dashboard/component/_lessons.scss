@@ -90,6 +90,11 @@
                     color: $text_color;
                     @include border-radius(100%);
                     display: block;
+
+                    @include mq(max, $mobile) {
+                        width: 15px;
+                        height: 15px;
+                    }
                 }
 
                 &.active {
